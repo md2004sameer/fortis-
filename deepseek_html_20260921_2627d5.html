@@ -1,0 +1,3070 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="light">
+
+<title>FORTIS SAFETY CENTER | Safety Training &amp; HSE Courses in Kushinagar, Uttar Pradesh</title>
+<meta name="description" content="FORTIS SAFETY CENTER is a professional safety training institute in Kushinagar, Uttar Pradesh offering NEBOSH IGC, IOSH, OSHA, First Aid, Fire Safety, HSE &amp; Industrial Safety, Scaffolding Safety, Advanced Diploma in Industrial Safety and corporate safety training.">
+<meta name="robots" content="index, follow">
+<meta name="theme-color" content="#061829">
+<meta name="author" content="FORTIS SAFETY CENTER">
+<meta name="geo.region" content="IN-UP">
+<meta name="geo.placename" content="Kushinagar, Uttar Pradesh, India">
+
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="FORTIS SAFETY CENTER">
+<meta property="og:title" content="FORTIS SAFETY CENTER | Safety Training &amp; HSE Development">
+<meta property="og:description" content="Professional safety training and HSE development in Kushinagar, Uttar Pradesh — classroom-based programs, practical learning and career support for safety professionals.">
+<meta property="og:locale" content="en_IN">
+
+<!-- Twitter -->
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="FORTIS SAFETY CENTER | Safety Training &amp; HSE Development">
+<meta name="twitter:description" content="Professional safety training and HSE development in Kushinagar, Uttar Pradesh — NEBOSH IGC, IOSH, OSHA, First Aid, Fire Safety, Industrial Safety and corporate training.">
+
+<!-- Inline SVG favicon (no external asset) -->
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cpath d='M32 4 56 13v19c0 12.8-9.6 22.6-24 28C17.6 54.6 8 44.8 8 32V13Z' fill='%23061829'/%3E%3Cpath d='M22 33.5c0-6.4 4.5-11 10-11s10 4.6 10 11Z' fill='%23d9a72e'/%3E%3Crect x='17.5' y='33.5' width='29' height='4.4' rx='2.2' fill='%23d9a72e'/%3E%3Crect x='29.3' y='18.4' width='5.4' height='4.6' rx='2' fill='%23d9a72e'/%3E%3C/svg%3E">
+<link rel="apple-touch-icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%23061829'/%3E%3Cpath d='M22 34c0-6.4 4.5-11 10-11s10 4.6 10 11Z' fill='%23d9a72e'/%3E%3Crect x='17.5' y='34' width='29' height='4.4' rx='2.2' fill='%23d9a72e'/%3E%3Crect x='29.3' y='19' width='5.4' height='4.6' rx='2' fill='%23d9a72e'/%3E%3C/svg%3E">
+
+<script>document.documentElement.classList.remove('no-js');document.documentElement.classList.add('js');</script>
+
+<style>
+/* ==========================================================================
+   FORTIS SAFETY CENTER — single-file stylesheet
+   Sections:
+     01 Tokens · 02 Reset · 03 Utilities · 04 Layout · 05 Buttons
+     06 Topbar · 07 Header · 08 Hero · 09 Value strip · 10 Generic cards
+     11 About · 12 Vision/Mission · 13 Courses · 14 Why choose · 15 Process
+     16 Career · 17 Founder · 18 FAQ · 19 Contact · 20 Final CTA
+     21 Footer · 22 Floating contact · 23 Responsive · 24 A11y/Print
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   01 · DESIGN TOKENS
+   -------------------------------------------------------------------------- */
+:root{
+  /* Brand navy scale */
+  --navy-950:#020c18;
+  --navy-900:#061829;
+  --navy-800:#0a2440;
+  --navy-700:#113257;
+  --navy-600:#1b4570;
+  --steel:#5b7590;
+
+  /* Gold accent — text-safe variant included */
+  --gold:#d9a72e;
+  --gold-light:#eec25c;
+  --gold-dark:#a97d16;
+  --gold-text:#8a6410;   /* AA-safe on white for small text */
+
+  /* Surfaces */
+  --white:#ffffff;
+  --surface:#f5f7fa;
+  --surface-2:#eef2f7;
+  --surface-3:#e6ecf3;
+  --border:#e0e6ee;
+  --border-strong:#c9d4e0;
+
+  /* Text */
+  --text:#132135;
+  --muted:#5d6d80;
+  --muted-2:#7b8a9c;
+  --text-invert:#e9eff6;
+  --muted-invert:#a7bbcd;
+
+  /* Functional */
+  --wa:#128c4a;
+  --wa-dark:#0d6f3a;
+  --focus:#f0b429;
+  --danger:#b3261e;
+
+  /* Shape */
+  --r-xs:4px;
+  --r-sm:6px;
+  --r:10px;
+  --r-lg:16px;
+  --r-pill:999px;
+
+  /* Elevation */
+  --sh-xs:0 1px 2px rgba(6,24,41,.05);
+  --sh-sm:0 1px 2px rgba(6,24,41,.06), 0 2px 8px rgba(6,24,41,.05);
+  --sh:0 10px 30px rgba(6,24,41,.08);
+  --sh-lg:0 26px 60px rgba(6,24,41,.16);
+
+  /* Rhythm */
+  --gutter:clamp(18px,4.5vw,44px);
+  --section-y:clamp(56px,7.5vw,104px);
+  --maxw:1220px;
+
+  /* Header height (used by scroll-margin) */
+  --header-h:74px;
+
+  /* Motion */
+  --t-fast:.16s ease;
+  --t:.22s ease;
+  --t-slow:.6s ease;
+}
+
+@media (max-width:620px){
+  :root{ --header-h:64px; }
+}
+
+/* --------------------------------------------------------------------------
+   02 · RESET & BASE
+   -------------------------------------------------------------------------- */
+*,*::before,*::after{box-sizing:border-box}
+
+html{
+  -webkit-text-size-adjust:100%;
+  scroll-behavior:smooth;
+  overflow-x:hidden;
+  overflow-x:clip;
+}
+
+body{
+  margin:0;
+  font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+  font-size:16px;
+  line-height:1.65;
+  color:var(--text);
+  background:var(--white);
+  overflow-x:hidden;
+  overflow-x:clip;
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+}
+
+body.is-locked{ overflow:hidden; }
+
+img,svg{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+button{font:inherit;color:inherit}
+ul,ol{margin:0;padding:0;list-style:none}
+dl,dd,dt{margin:0}
+
+h1,h2,h3,h4{
+  margin:0;
+  font-weight:800;
+  letter-spacing:-.022em;
+  line-height:1.15;
+  color:var(--navy-900);
+  text-wrap:balance;
+}
+h1{ font-size:clamp(2rem,5.2vw,3.75rem); line-height:1.06; letter-spacing:-.03em; }
+h2{ font-size:clamp(1.62rem,3.4vw,2.5rem); }
+h3{ font-size:1.08rem; letter-spacing:-.012em; }
+p{ margin:0 0 1rem; text-wrap:pretty; }
+p:last-child{ margin-bottom:0; }
+
+:focus-visible{
+  outline:3px solid var(--focus);
+  outline-offset:2px;
+  border-radius:4px;
+}
+:focus:not(:focus-visible){ outline:none; }
+
+::selection{ background:var(--gold-light); color:var(--navy-950); }
+
+/* --------------------------------------------------------------------------
+   03 · UTILITIES
+   -------------------------------------------------------------------------- */
+.sr-only{
+  position:absolute;
+  width:1px; height:1px;
+  padding:0; margin:-1px;
+  overflow:hidden;
+  clip:rect(0,0,0,0);
+  clip-path:inset(50%);
+  white-space:nowrap;
+  border:0;
+}
+
+.skip-link{
+  position:absolute; left:12px; top:-64px; z-index:200;
+  background:var(--navy-900); color:#fff;
+  padding:12px 18px; border-radius:var(--r-sm);
+  font-weight:700; font-size:.9rem;
+  transition:top var(--t-fast);
+}
+.skip-link:focus{ top:12px; }
+
+.js .reveal{
+  opacity:0;
+  transform:translateY(18px);
+  transition:opacity var(--t-slow), transform var(--t-slow);
+  will-change:opacity,transform;
+}
+.js .reveal.in{ opacity:1; transform:none; }
+.js .reveal.d1{ transition-delay:.06s; }
+.js .reveal.d2{ transition-delay:.12s; }
+.js .reveal.d3{ transition-delay:.18s; }
+
+/* --------------------------------------------------------------------------
+   04 · LAYOUT
+   -------------------------------------------------------------------------- */
+.wrap{
+  width:100%;
+  max-width:var(--maxw);
+  margin-inline:auto;
+  padding-inline:var(--gutter);
+}
+
+.section{ padding-block:var(--section-y); }
+.section--surface{ background:var(--surface); }
+.section--dark{
+  background:linear-gradient(175deg,var(--navy-900) 0%,#08203a 55%,var(--navy-800) 100%);
+  color:var(--text-invert);
+}
+.section--dark h2,
+.section--dark h3{ color:#fff; }
+.section--dark p{ color:var(--muted-invert); }
+
+section[id]{ scroll-margin-top:calc(var(--header-h) + 20px); }
+
+.sec-head{
+  max-width:780px;
+  margin:0 auto clamp(32px,4.2vw,56px);
+  text-align:center;
+}
+.sec-head h2{ margin:.4em 0 .55em; }
+.sec-head p{ color:var(--muted); font-size:1.02rem; }
+.section--dark .sec-head p{ color:var(--muted-invert); }
+
+.eyebrow{
+  display:inline-flex; align-items:center; gap:.6rem;
+  font-size:.71rem; font-weight:800; letter-spacing:.18em;
+  text-transform:uppercase; color:var(--gold-text);
+}
+.eyebrow::before{
+  content:""; width:24px; height:2px; background:currentColor;
+  opacity:.8; border-radius:2px;
+}
+.section--dark .eyebrow,
+.hero .eyebrow{ color:var(--gold-light); }
+
+/* --------------------------------------------------------------------------
+   05 · BUTTONS
+   -------------------------------------------------------------------------- */
+.btn{
+  display:inline-flex; align-items:center; justify-content:center;
+  gap:.55rem;
+  min-height:48px;
+  padding:.85rem 1.45rem;
+  border-radius:var(--r-sm);
+  border:1px solid transparent;
+  font-size:.93rem; font-weight:700; line-height:1.1;
+  text-align:center;
+  cursor:pointer;
+  white-space:nowrap;
+  transition:
+    transform var(--t-fast),
+    box-shadow var(--t-fast),
+    background-color var(--t-fast),
+    border-color var(--t-fast),
+    color var(--t-fast);
+}
+.btn:active{ transform:translateY(1px); }
+.btn svg{ width:18px; height:18px; flex:none; }
+
+.btn-primary{
+  background:linear-gradient(180deg,var(--gold-light),var(--gold));
+  color:#231703;
+  border-color:#c2911c;
+  box-shadow:0 6px 18px rgba(217,167,46,.26);
+}
+.btn-primary:hover{
+  background:linear-gradient(180deg,#f3cd72,var(--gold));
+  box-shadow:0 10px 26px rgba(217,167,46,.34);
+}
+
+.btn-dark{
+  background:var(--navy-800);
+  color:#fff;
+  border-color:var(--navy-800);
+}
+.btn-dark:hover{ background:var(--navy-700); border-color:var(--navy-700); }
+
+.btn-wa{
+  background:var(--wa);
+  color:#fff;
+  border-color:var(--wa);
+}
+.btn-wa:hover{ background:var(--wa-dark); border-color:var(--wa-dark); }
+
+.btn-outline{
+  background:transparent;
+  color:var(--navy-800);
+  border-color:var(--border-strong);
+}
+.btn-outline:hover{ border-color:var(--navy-800); background:rgba(10,36,64,.045); }
+
+.btn-outline-light{
+  background:rgba(255,255,255,.05);
+  color:#fff;
+  border-color:rgba(255,255,255,.4);
+}
+.btn-outline-light:hover{ background:rgba(255,255,255,.13); border-color:rgba(255,255,255,.72); }
+
+.btn-block{ width:100%; }
+.btn-row{ display:flex; flex-wrap:wrap; gap:.75rem; }
+
+/* --------------------------------------------------------------------------
+   06 · TOPBAR
+   -------------------------------------------------------------------------- */
+.topbar{
+  background:var(--navy-950);
+  color:#c3d2e0;
+  font-size:.79rem;
+  letter-spacing:.01em;
+}
+.topbar .wrap{
+  display:flex; align-items:center; justify-content:space-between;
+  gap:.6rem 1rem; flex-wrap:wrap;
+  min-height:40px; padding-block:.35rem;
+}
+.topbar a{
+  display:inline-flex; align-items:center; gap:.45rem;
+  transition:color var(--t-fast);
+}
+.topbar a:hover{ color:var(--gold-light); }
+.topbar svg{ width:14px; height:14px; opacity:.85; }
+.topbar-tag{
+  display:inline-flex; align-items:center; gap:.5rem;
+  font-weight:600;
+}
+.topbar-tag::before{
+  content:""; width:6px; height:6px; border-radius:50%;
+  background:var(--gold);
+  box-shadow:0 0 0 3px rgba(217,167,46,.18);
+  flex:none;
+}
+.topbar-links{
+  display:flex; align-items:center; gap:1.1rem; flex-wrap:wrap;
+}
+.topbar-sep{
+  width:1px; height:14px;
+  background:rgba(255,255,255,.16);
+  flex:none;
+}
+
+/* --------------------------------------------------------------------------
+   07 · HEADER / NAV
+   -------------------------------------------------------------------------- */
+.site-header{
+  position:sticky; top:0; z-index:80;
+  background:rgba(255,255,255,.94);
+  -webkit-backdrop-filter:saturate(180%) blur(12px);
+  backdrop-filter:saturate(180%) blur(12px);
+  border-bottom:1px solid var(--border);
+  transition:box-shadow var(--t), border-color var(--t);
+}
+.site-header.is-stuck{ box-shadow:0 8px 30px rgba(6,24,41,.09); }
+
+.header-inner{
+  display:flex; align-items:center; justify-content:space-between;
+  gap:1rem;
+  min-height:var(--header-h);
+  transition:min-height var(--t);
+}
+
+/* Brand */
+.brand{
+  display:flex; align-items:center; gap:.7rem;
+  min-width:0;
+  flex:none;
+}
+.brand-mark{ width:44px; height:44px; flex:none; }
+.brand-text{ display:flex; flex-direction:column; line-height:1; min-width:0; }
+.brand-name{
+  font-size:1.02rem; font-weight:900; letter-spacing:.045em;
+  color:var(--navy-900); white-space:nowrap;
+}
+.brand-sub{
+  font-size:.6rem; font-weight:800; letter-spacing:.2em;
+  color:var(--gold-text); text-transform:uppercase;
+  margin-top:4px; white-space:nowrap;
+}
+
+/* Desktop nav */
+.nav-links{
+  display:flex; align-items:center; gap:.35rem;
+  margin-inline:auto;
+}
+.nav-link{
+  position:relative;
+  padding:.55rem .8rem;
+  border-radius:var(--r-sm);
+  font-size:.9rem; font-weight:600; color:#33465c;
+  transition:color var(--t-fast), background-color var(--t-fast);
+}
+.nav-link:hover{ color:var(--navy-900); background:var(--surface); }
+.nav-link::after{
+  content:""; position:absolute;
+  left:.8rem; right:.8rem; bottom:.28rem; height:2px;
+  background:var(--gold); border-radius:2px;
+  transform:scaleX(0); transform-origin:left;
+  transition:transform var(--t);
+}
+.nav-link.is-active{ color:var(--navy-900); }
+.nav-link.is-active::after{ transform:scaleX(1); }
+
+.header-actions{
+  display:flex; align-items:center; gap:.6rem;
+  flex:none;
+}
+.header-cta{
+  min-height:44px;
+  padding:.7rem 1.15rem;
+  font-size:.88rem;
+}
+
+/* Hamburger */
+.nav-toggle{
+  display:none;
+  width:46px; height:46px; flex:none;
+  align-items:center; justify-content:center;
+  background:var(--navy-900);
+  border:1px solid var(--navy-900);
+  border-radius:var(--r-sm);
+  cursor:pointer;
+  transition:background-color var(--t-fast), border-color var(--t-fast);
+}
+.nav-toggle:hover{ background:var(--navy-700); border-color:var(--navy-700); }
+.bars{ position:relative; display:block; width:20px; height:14px; }
+.bars span{
+  position:absolute; left:0;
+  width:100%; height:2px; border-radius:2px;
+  background:var(--gold-light);
+  transition:transform var(--t), opacity var(--t-fast), top var(--t);
+}
+.bars span:nth-child(1){ top:0; }
+.bars span:nth-child(2){ top:6px; }
+.bars span:nth-child(3){ top:12px; }
+.nav-toggle[aria-expanded="true"] .bars span:nth-child(1){ top:6px; transform:rotate(45deg); }
+.nav-toggle[aria-expanded="true"] .bars span:nth-child(2){ opacity:0; }
+.nav-toggle[aria-expanded="true"] .bars span:nth-child(3){ top:6px; transform:rotate(-45deg); }
+
+/* Mobile panel */
+.mobile-nav{
+  position:absolute; left:0; right:0; top:100%;
+  background:#fff;
+  border-bottom:1px solid var(--border);
+  box-shadow:0 22px 45px rgba(6,24,41,.13);
+  padding:.5rem var(--gutter) 1.4rem;
+  opacity:0; visibility:hidden;
+  transform:translateY(-12px);
+  transition:opacity var(--t), transform var(--t), visibility var(--t);
+  max-height:calc(100vh - var(--header-h));
+  overflow-y:auto;
+  -webkit-overflow-scrolling:touch;
+}
+.mobile-nav.is-open{ opacity:1; visibility:visible; transform:translateY(0); }
+
+.mobile-nav a.m-link{
+  display:flex; align-items:center; justify-content:space-between;
+  gap:1rem;
+  padding:.95rem .35rem;
+  font-size:1rem; font-weight:700; color:var(--navy-900);
+  border-bottom:1px solid var(--border);
+  min-height:52px;
+}
+.mobile-nav a.m-link:last-of-type{ border-bottom:0; }
+.mobile-nav a.m-link::after{
+  content:""; width:7px; height:7px; flex:none;
+  border-right:2px solid var(--gold-dark);
+  border-bottom:2px solid var(--gold-dark);
+  transform:rotate(-45deg);
+}
+.mobile-nav a.m-link:hover{ color:var(--gold-text); }
+
+.mobile-actions{
+  display:grid; gap:.6rem;
+  margin-top:1.1rem; padding-top:1.1rem;
+  border-top:1px solid var(--border);
+}
+
+/* --------------------------------------------------------------------------
+   08 · HERO
+   -------------------------------------------------------------------------- */
+.hero{
+  position:relative;
+  overflow:hidden;
+  background:
+    radial-gradient(900px 520px at 78% 18%, rgba(217,167,46,.15), transparent 62%),
+    radial-gradient(760px 620px at 8% 90%, rgba(27,69,112,.62), transparent 68%),
+    linear-gradient(160deg,#03101f 0%,#061e37 48%,#0a2946 100%);
+  color:#fff;
+}
+.hero::before{
+  content:""; position:absolute; inset:0;
+  pointer-events:none;
+  background-image:
+    linear-gradient(rgba(255,255,255,.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,.05) 1px, transparent 1px);
+  background-size:66px 66px;
+  -webkit-mask-image:radial-gradient(ellipse at 70% 35%, #000 10%, transparent 74%);
+          mask-image:radial-gradient(ellipse at 70% 35%, #000 10%, transparent 74%);
+}
+.hero::after{
+  content:""; position:absolute;
+  left:0; right:0; bottom:0; height:3px;
+  background:linear-gradient(90deg,transparent,var(--gold),transparent);
+  opacity:.5;
+}
+
+.hero-inner{
+  position:relative; z-index:1;
+  display:grid;
+  grid-template-columns:1.06fr .94fr;
+  gap:clamp(26px,4vw,58px);
+  align-items:center;
+  padding-block:clamp(50px,7vw,94px);
+}
+
+.hero h1{ margin:.5em 0 .45em; color:#fff; }
+.hero h1 .accent{ color:var(--gold-light); display:block; }
+
+.hero-lead{
+  font-size:clamp(1rem,1.35vw,1.12rem);
+  color:#d3e0ec;
+  max-width:56ch;
+  margin-bottom:1.85rem;
+}
+
+.hero-points{
+  display:flex; flex-wrap:wrap;
+  gap:.5rem .6rem;
+  margin-top:2rem;
+}
+.hero-point{
+  display:inline-flex; align-items:center; gap:.45rem;
+  padding:.42rem .8rem;
+  border:1px solid rgba(255,255,255,.17);
+  background:rgba(255,255,255,.05);
+  border-radius:var(--r-pill);
+  font-size:.74rem; font-weight:700; letter-spacing:.07em;
+  text-transform:uppercase; color:#cfdded;
+}
+.hero-point svg{ width:14px; height:14px; color:var(--gold-light); flex:none; }
+
+.hero-art-wrap{ display:flex; justify-content:center; align-items:center; }
+.hero-art{ width:100%; max-width:500px; height:auto; }
+
+.spin-slow{ transform-origin:280px 280px; animation:spin 70s linear infinite; }
+.pulse-soft{ transform-origin:280px 280px; animation:pulse 6s ease-in-out infinite; }
+@keyframes spin{ to{ transform:rotate(360deg); } }
+@keyframes pulse{
+  0%,100%{ opacity:.4; transform:scale(1); }
+  50%    { opacity:.8; transform:scale(1.035); }
+}
+
+/* --------------------------------------------------------------------------
+   09 · VALUE STRIP
+   -------------------------------------------------------------------------- */
+.value-strip{
+  background:linear-gradient(180deg,#08203a,var(--navy-900));
+  color:#fff;
+  border-top:1px solid rgba(255,255,255,.07);
+  padding-block:clamp(28px,4vw,46px);
+}
+.value-grid{ display:grid; grid-template-columns:repeat(4,1fr); }
+.value-item{
+  display:flex; align-items:flex-start; gap:.85rem;
+  padding:.5rem 1.4rem;
+  border-right:1px solid rgba(255,255,255,.1);
+}
+.value-item:last-child{ border-right:0; }
+.value-item:first-child{ padding-left:0; }
+
+.value-icon{
+  width:40px; height:40px; flex:none;
+  border-radius:9px;
+  display:grid; place-items:center;
+  background:rgba(217,167,46,.13);
+  border:1px solid rgba(217,167,46,.28);
+  color:var(--gold-light);
+}
+.value-icon svg{ width:20px; height:20px; }
+.value-item strong{
+  display:block;
+  font-size:.8rem; font-weight:800;
+  letter-spacing:.14em; text-transform:uppercase;
+  color:var(--gold-light);
+  margin-bottom:.22rem;
+}
+.value-item span{ font-size:.86rem; color:#a9bccd; line-height:1.45; }
+
+/* --------------------------------------------------------------------------
+   10 · GENERIC CARDS
+   -------------------------------------------------------------------------- */
+.card{
+  background:#fff;
+  border:1px solid var(--border);
+  border-radius:var(--r);
+  padding:1.6rem;
+  box-shadow:var(--sh-sm);
+  transition:transform var(--t), box-shadow var(--t), border-color var(--t);
+}
+.card h3{ color:var(--navy-900); margin-bottom:.5rem; }
+.card p{ color:var(--muted); font-size:.92rem; }
+.card:hover{
+  transform:translateY(-3px);
+  box-shadow:var(--sh);
+  border-color:var(--border-strong);
+}
+
+/* --------------------------------------------------------------------------
+   11 · ABOUT
+   -------------------------------------------------------------------------- */
+.about-grid{
+  display:grid;
+  grid-template-columns:1.05fr .95fr;
+  gap:clamp(28px,4.5vw,64px);
+  align-items:center;
+}
+.about-copy h2{ margin:.35em 0 .7em; }
+.about-copy p{ color:var(--muted); }
+.about-copy .lead{ color:var(--text); font-size:1.05rem; }
+
+.checklist{ display:grid; gap:.7rem; margin:1.6rem 0 0; }
+.checklist li{
+  display:flex; align-items:flex-start; gap:.7rem;
+  font-size:.93rem; font-weight:600; color:#2a3c52;
+}
+.checklist svg{
+  width:19px; height:19px; flex:none;
+  margin-top:2px; color:var(--gold-dark);
+}
+
+/* At-a-glance panel */
+.glance{
+  position:relative;
+  background:linear-gradient(165deg,var(--navy-900),var(--navy-700));
+  border-radius:var(--r-lg);
+  padding:clamp(1.6rem,3vw,2.2rem);
+  color:#fff;
+  overflow:hidden;
+  box-shadow:var(--sh-lg);
+}
+.glance::before{
+  content:""; position:absolute; inset:0;
+  background-image:
+    linear-gradient(rgba(255,255,255,.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,.05) 1px, transparent 1px);
+  background-size:42px 42px;
+  -webkit-mask-image:radial-gradient(circle at 85% 10%, #000, transparent 70%);
+          mask-image:radial-gradient(circle at 85% 10%, #000, transparent 70%);
+  pointer-events:none;
+}
+.glance > *{ position:relative; }
+.glance-title{
+  font-size:.72rem; font-weight:800; letter-spacing:.19em;
+  text-transform:uppercase; color:var(--gold-light);
+  margin-bottom:1.2rem;
+}
+.glance-list{ display:grid; }
+.glance-row{
+  display:flex; justify-content:space-between; align-items:baseline;
+  gap:1rem;
+  padding:.85rem 0;
+  border-bottom:1px solid rgba(255,255,255,.11);
+  font-size:.88rem;
+}
+.glance-row:last-child{ border-bottom:0; padding-bottom:0; }
+.glance-row dt{ color:#9fb4c8; font-weight:600; }
+.glance-row dd{ font-weight:700; color:#fff; text-align:right; }
+
+/* --------------------------------------------------------------------------
+   12 · VISION / MISSION
+   -------------------------------------------------------------------------- */
+.vm-grid{
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:clamp(18px,2.4vw,28px);
+}
+.vm-card{
+  position:relative;
+  background:rgba(255,255,255,.045);
+  border:1px solid rgba(255,255,255,.13);
+  border-radius:var(--r);
+  padding:clamp(1.6rem,3vw,2.3rem);
+  overflow:hidden;
+  transition:border-color var(--t), background-color var(--t), transform var(--t);
+}
+.vm-card:hover{
+  border-color:rgba(217,167,46,.45);
+  background:rgba(255,255,255,.07);
+  transform:translateY(-3px);
+}
+.vm-num{
+  position:absolute; right:1.1rem; top:.4rem;
+  font-size:4.6rem; font-weight:900; line-height:1;
+  color:rgba(255,255,255,.05);
+  letter-spacing:-.04em;
+  pointer-events:none; user-select:none;
+}
+.vm-icon{
+  width:46px; height:46px; border-radius:10px;
+  display:grid; place-items:center;
+  background:rgba(217,167,46,.14);
+  border:1px solid rgba(217,167,46,.3);
+  color:var(--gold-light);
+  margin-bottom:1.1rem;
+}
+.vm-icon svg{ width:22px; height:22px; }
+.vm-card h3{ font-size:1.2rem; margin-bottom:.6rem; }
+.vm-card p{ font-size:.94rem; }
+
+/* --------------------------------------------------------------------------
+   13 · COURSES
+   -------------------------------------------------------------------------- */
+.filters{
+  display:flex; flex-wrap:wrap; gap:.5rem; justify-content:center;
+  margin-bottom:clamp(24px,3.4vw,38px);
+}
+.filter-btn{
+  padding:.55rem 1.05rem;
+  border-radius:var(--r-pill);
+  border:1px solid var(--border-strong);
+  background:#fff;
+  font-size:.83rem; font-weight:700; color:#41546b;
+  cursor:pointer;
+  min-height:40px;
+  transition:background-color var(--t-fast), color var(--t-fast),
+             border-color var(--t-fast), box-shadow var(--t-fast);
+}
+.filter-btn:hover{ border-color:var(--navy-700); color:var(--navy-900); }
+.filter-btn[aria-pressed="true"]{
+  background:var(--navy-900);
+  border-color:var(--navy-900);
+  color:#fff;
+  box-shadow:0 6px 16px rgba(6,24,41,.2);
+}
+
+.course-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:clamp(16px,2vw,22px);
+}
+.course-card{
+  position:relative;
+  display:flex; flex-direction:column;
+  background:#fff;
+  border:1px solid var(--border);
+  border-radius:var(--r);
+  padding:1.55rem 1.5rem 1.35rem;
+  box-shadow:var(--sh-sm);
+  overflow:hidden;
+  transition:transform var(--t), box-shadow var(--t), border-color var(--t);
+}
+.course-card::before{
+  content:""; position:absolute;
+  left:0; top:0; bottom:0; width:3px;
+  background:linear-gradient(180deg,var(--gold-light),var(--gold-dark));
+  transform:scaleY(0); transform-origin:top;
+  transition:transform var(--t);
+}
+.course-card:hover{
+  transform:translateY(-4px);
+  box-shadow:var(--sh-lg);
+  border-color:var(--border-strong);
+}
+.course-card:hover::before{ transform:scaleY(1); }
+.course-card.is-hidden{ display:none; }
+
+.course-top{
+  display:flex; align-items:center; justify-content:space-between;
+  gap:.8rem; margin-bottom:1rem;
+}
+.course-icon{
+  width:46px; height:46px; flex:none;
+  border-radius:10px;
+  display:grid; place-items:center;
+  background:linear-gradient(160deg,#eef3f9,#e2eaf4);
+  border:1px solid var(--border);
+  color:var(--navy-700);
+  transition:background-color var(--t), color var(--t), border-color var(--t);
+}
+.course-icon svg{ width:22px; height:22px; }
+.course-card:hover .course-icon{
+  background:linear-gradient(160deg,var(--navy-800),var(--navy-600));
+  color:var(--gold-light);
+  border-color:var(--navy-700);
+}
+
+.course-tag{
+  font-size:.65rem; font-weight:800;
+  letter-spacing:.12em; text-transform:uppercase;
+  color:var(--gold-text);
+  background:rgba(217,167,46,.11);
+  border:1px solid rgba(217,167,46,.28);
+  padding:.28rem .55rem;
+  border-radius:var(--r-pill);
+  white-space:nowrap;
+}
+
+.course-card h3{ margin-bottom:.55rem; font-size:1.06rem; }
+.course-card p{ font-size:.89rem; color:var(--muted); flex:1; }
+
+.course-foot{
+  margin-top:1.25rem; padding-top:1rem;
+  border-top:1px dashed var(--border);
+  display:flex; align-items:center; justify-content:space-between;
+  gap:.8rem; flex-wrap:wrap;
+}
+.course-note{ font-size:.74rem; color:var(--muted-2); font-weight:600; }
+.course-link{
+  display:inline-flex; align-items:center; gap:.35rem;
+  font-size:.83rem; font-weight:800; color:var(--navy-800);
+  transition:color var(--t-fast), gap var(--t-fast);
+}
+.course-link svg{ width:15px; height:15px; transition:transform var(--t-fast); }
+.course-link:hover{ color:var(--gold-text); }
+.course-link:hover svg{ transform:translateX(3px); }
+
+.courses-note{
+  margin-top:clamp(26px,3vw,38px);
+  text-align:center;
+  font-size:.86rem; color:var(--muted);
+}
+.courses-note strong{ color:var(--navy-800); }
+
+/* --------------------------------------------------------------------------
+   14 · WHY CHOOSE
+   -------------------------------------------------------------------------- */
+.why-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:clamp(16px,2vw,22px);
+}
+.why-card{
+  background:#fff;
+  border:1px solid var(--border);
+  border-radius:var(--r);
+  padding:1.6rem 1.45rem;
+  transition:transform var(--t), box-shadow var(--t), border-color var(--t);
+}
+.why-card:hover{
+  transform:translateY(-4px);
+  box-shadow:var(--sh);
+  border-color:var(--border-strong);
+}
+.why-icon{
+  width:44px; height:44px; border-radius:10px;
+  display:grid; place-items:center;
+  background:var(--navy-900);
+  color:var(--gold-light);
+  margin-bottom:1.05rem;
+}
+.why-icon svg{ width:21px; height:21px; }
+.why-card h3{ font-size:1rem; margin-bottom:.5rem; }
+.why-card p{ font-size:.87rem; color:var(--muted); }
+
+/* --------------------------------------------------------------------------
+   15 · PROCESS
+   -------------------------------------------------------------------------- */
+.process-note{
+  text-align:center;
+  font-size:.83rem; color:var(--muted);
+  max-width:640px;
+  margin:0 auto clamp(30px,3.6vw,44px);
+}
+.steps{
+  display:grid;
+  grid-template-columns:repeat(5,1fr);
+  gap:clamp(14px,2vw,20px);
+  position:relative;
+}
+.steps::before{
+  content:""; position:absolute;
+  top:26px; left:9%; right:9%; height:2px;
+  background:repeating-linear-gradient(90deg,var(--border-strong) 0 8px,transparent 8px 16px);
+}
+.step{ position:relative; text-align:center; }
+.step-num{
+  position:relative; z-index:1;
+  width:54px; height:54px;
+  margin:0 auto 1rem;
+  border-radius:50%;
+  display:grid; place-items:center;
+  background:#fff;
+  border:2px solid var(--border-strong);
+  font-size:.9rem; font-weight:900; color:var(--navy-800);
+  letter-spacing:.02em;
+  transition:border-color var(--t), background-color var(--t),
+             color var(--t), transform var(--t);
+}
+.step:hover .step-num{
+  border-color:var(--gold);
+  background:var(--navy-900);
+  color:var(--gold-light);
+  transform:translateY(-3px);
+}
+.step h3{ font-size:.98rem; margin-bottom:.4rem; }
+.step p{ font-size:.84rem; color:var(--muted); }
+
+/* --------------------------------------------------------------------------
+   16 · CAREER
+   -------------------------------------------------------------------------- */
+.career-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:clamp(16px,2vw,22px);
+}
+.career-card{
+  background:#fff;
+  border:1px solid var(--border);
+  border-radius:var(--r);
+  padding:1.7rem 1.55rem;
+  box-shadow:var(--sh-sm);
+  transition:transform var(--t), box-shadow var(--t), border-color var(--t);
+}
+.career-card:hover{
+  transform:translateY(-4px);
+  box-shadow:var(--sh);
+  border-color:var(--border-strong);
+}
+.career-icon{
+  width:48px; height:48px; border-radius:11px;
+  display:grid; place-items:center;
+  background:linear-gradient(160deg,rgba(217,167,46,.16),rgba(217,167,46,.06));
+  border:1px solid rgba(217,167,46,.3);
+  color:var(--gold-dark);
+  margin-bottom:1.1rem;
+}
+.career-icon svg{ width:22px; height:22px; }
+.career-card h3{ margin-bottom:.5rem; }
+.career-card p{ font-size:.9rem; color:var(--muted); }
+
+.career-disclaimer{
+  margin-top:clamp(24px,3vw,34px);
+  padding:1rem 1.2rem;
+  background:#fff;
+  border:1px solid var(--border);
+  border-left:3px solid var(--gold);
+  border-radius:var(--r-sm);
+  font-size:.83rem; color:var(--muted);
+  max-width:820px;
+  margin-inline:auto;
+}
+.career-disclaimer strong{ color:var(--navy-900); }
+
+/* --------------------------------------------------------------------------
+   17 · FOUNDER
+   -------------------------------------------------------------------------- */
+.founder{
+  background:linear-gradient(160deg,var(--navy-900),var(--navy-700));
+  color:#fff;
+  position:relative;
+  overflow:hidden;
+}
+.founder::before{
+  content:""; position:absolute; inset:0;
+  pointer-events:none;
+  background-image:
+    linear-gradient(rgba(255,255,255,.045) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,.045) 1px, transparent 1px);
+  background-size:58px 58px;
+  -webkit-mask-image:radial-gradient(circle at 50% 50%, #000, transparent 72%);
+          mask-image:radial-gradient(circle at 50% 50%, #000, transparent 72%);
+}
+.founder-inner{
+  position:relative;
+  max-width:820px;
+  margin-inline:auto;
+  text-align:center;
+}
+.founder-avatar{
+  width:108px; height:108px;
+  margin:0 auto 1.4rem;
+  border-radius:50%;
+  display:grid; place-items:center;
+  background:linear-gradient(160deg,rgba(255,255,255,.09),rgba(255,255,255,.02));
+  border:1px solid rgba(217,167,46,.45);
+  box-shadow:0 0 0 8px rgba(217,167,46,.07);
+  font-size:2rem; font-weight:900;
+  letter-spacing:.03em;
+  color:var(--gold-light);
+}
+.founder h2{ color:#fff; margin-bottom:1.1rem; }
+.founder-name{
+  font-size:clamp(1.25rem,2.4vw,1.6rem);
+  font-weight:900;
+  color:var(--gold-light);
+  letter-spacing:-.01em;
+}
+.founder-role{
+  font-size:.74rem; font-weight:800;
+  letter-spacing:.2em; text-transform:uppercase;
+  color:#9fb4c8;
+  margin:.5rem 0 1.2rem;
+}
+.founder p{ color:#c2d3e2; font-size:1rem; max-width:60ch; margin-inline:auto; }
+
+/* --------------------------------------------------------------------------
+   18 · FAQ
+   -------------------------------------------------------------------------- */
+.faq-list{
+  display:grid; gap:.7rem;
+  max-width:860px;
+  margin-inline:auto;
+}
+.faq-item{
+  background:#fff;
+  border:1px solid var(--border);
+  border-radius:var(--r);
+  overflow:hidden;
+  transition:border-color var(--t), box-shadow var(--t);
+}
+.faq-item[open]{
+  border-color:var(--border-strong);
+  box-shadow:var(--sh-sm);
+}
+.faq-item summary{
+  display:flex; align-items:center; justify-content:space-between;
+  gap:1rem;
+  padding:1.1rem 1.35rem;
+  cursor:pointer;
+  list-style:none;
+  font-weight:700;
+  font-size:.97rem;
+  color:var(--navy-900);
+  min-height:56px;
+  transition:background-color var(--t-fast);
+}
+.faq-item summary::-webkit-details-marker{ display:none; }
+.faq-item summary::marker{ content:""; }
+.faq-item summary:hover{ background:var(--surface); }
+.faq-icon{
+  width:20px; height:20px; flex:none;
+  color:var(--gold-dark);
+  transition:transform var(--t);
+}
+.faq-item[open] .faq-icon{ transform:rotate(180deg); }
+.faq-body{
+  padding:0 1.35rem 1.25rem;
+  color:var(--muted);
+  font-size:.92rem;
+  line-height:1.7;
+}
+.faq-body a{ color:var(--gold-text); font-weight:700; }
+.faq-body a:hover{ text-decoration:underline; }
+
+/* --------------------------------------------------------------------------
+   19 · CONTACT
+   -------------------------------------------------------------------------- */
+.contact-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:clamp(20px,2.6vw,30px);
+  align-items:start;
+}
+
+.contact-panel{
+  background:#fff;
+  border:1px solid var(--border);
+  border-radius:var(--r);
+  padding:clamp(1.5rem,2.8vw,2.1rem);
+  box-shadow:var(--sh-sm);
+}
+.contact-panel h3{ margin-bottom:1.1rem; font-size:1.15rem; }
+
+.info-list{ display:grid; gap:1.05rem; }
+.info-item{ display:flex; gap:.9rem; align-items:flex-start; }
+.info-icon{
+  width:40px; height:40px; flex:none;
+  border-radius:9px;
+  display:grid; place-items:center;
+  background:var(--surface-2);
+  border:1px solid var(--border);
+  color:var(--navy-700);
+}
+.info-icon svg{ width:19px; height:19px; }
+.info-item dt{
+  font-size:.68rem; font-weight:800;
+  letter-spacing:.14em; text-transform:uppercase;
+  color:var(--gold-text);
+  margin-bottom:.2rem;
+}
+.info-item dd{
+  font-size:.93rem;
+  color:#2c3e55;
+  font-weight:600;
+  line-height:1.5;
+}
+.info-item dd a{ transition:color var(--t-fast); }
+.info-item dd a:hover{ color:var(--gold-text); }
+
+.contact-actions{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:.6rem;
+  margin-top:1.5rem;
+}
+.contact-actions .btn{
+  font-size:.87rem;
+  padding-inline:1rem;
+}
+
+/* Enquiry form */
+.enquiry-form{ display:grid; gap:.95rem; margin-top:.35rem; }
+.field{ display:grid; gap:.4rem; }
+.field label{
+  font-size:.74rem; font-weight:800;
+  letter-spacing:.1em; text-transform:uppercase;
+  color:#54677d;
+}
+.field label .opt{
+  font-weight:600;
+  text-transform:none;
+  letter-spacing:0;
+  color:var(--muted-2);
+}
+.field input,
+.field select,
+.field textarea{
+  width:100%;
+  font:inherit;
+  font-size:.92rem;
+  color:var(--text);
+  background:#fbfcfe;
+  border:1px solid var(--border-strong);
+  border-radius:var(--r-sm);
+  padding:.72rem .85rem;
+  min-height:46px;
+  transition:border-color var(--t-fast), box-shadow var(--t-fast), background-color var(--t-fast);
+}
+.field textarea{ min-height:96px; resize:vertical; }
+.field input:focus,
+.field select:focus,
+.field textarea:focus{
+  outline:none;
+  border-color:var(--navy-700);
+  background:#fff;
+  box-shadow:0 0 0 3px rgba(27,69,112,.13);
+}
+.field input::placeholder,
+.field textarea::placeholder{ color:#9aa8b8; }
+.field input[aria-invalid="true"],
+.field textarea[aria-invalid="true"]{
+  border-color:var(--danger);
+  background:#fff8f7;
+}
+.field input[aria-invalid="true"]:focus,
+.field textarea[aria-invalid="true"]:focus{
+  box-shadow:0 0 0 3px rgba(179,38,30,.14);
+}
+.field-error{
+  font-size:.78rem;
+  font-weight:700;
+  color:var(--danger);
+  margin:0;
+}
+
+.form-note{
+  font-size:.75rem;
+  color:var(--muted-2);
+  line-height:1.6;
+}
+.form-note a{ color:var(--gold-text); font-weight:700; }
+.form-note a:hover{ text-decoration:underline; }
+
+.form-status{
+  font-size:.83rem;
+  font-weight:700;
+  color:var(--wa-dark);
+  margin:0;
+  min-height:0;
+}
+
+/* --------------------------------------------------------------------------
+   20 · FINAL CTA
+   -------------------------------------------------------------------------- */
+.final-cta{
+  position:relative;
+  overflow:hidden;
+  background:linear-gradient(120deg,#c89427 0%,var(--gold) 45%,var(--gold-light) 100%);
+  color:var(--navy-950);
+  text-align:center;
+  padding-block:clamp(48px,6.5vw,80px);
+}
+.final-cta::before{
+  content:""; position:absolute; inset:0;
+  pointer-events:none;
+  background-image:
+    linear-gradient(rgba(6,24,41,.07) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(6,24,41,.07) 1px, transparent 1px);
+  background-size:48px 48px;
+  -webkit-mask-image:radial-gradient(ellipse at center, #000, transparent 78%);
+          mask-image:radial-gradient(ellipse at center, #000, transparent 78%);
+}
+.final-cta-inner{
+  position:relative;
+  max-width:760px;
+  margin-inline:auto;
+}
+.final-cta h2{ color:var(--navy-950); margin-bottom:.6rem; }
+.final-cta p{ color:#2a2008; font-size:1.02rem; margin-bottom:1.8rem; }
+.final-cta .btn-row{ justify-content:center; }
+
+/* --------------------------------------------------------------------------
+   21 · FOOTER
+   -------------------------------------------------------------------------- */
+.site-footer{
+  background:var(--navy-950);
+  color:#9fb2c6;
+  padding-top:clamp(48px,5.5vw,70px);
+}
+.foot-grid{
+  display:grid;
+  grid-template-columns:1.6fr 1fr 1fr 1.2fr;
+  gap:clamp(24px,3.4vw,44px);
+  padding-bottom:clamp(34px,4vw,50px);
+}
+.foot-brand{
+  display:flex; align-items:center; gap:.65rem;
+  margin-bottom:1rem;
+}
+.foot-brand svg{ width:40px; height:40px; flex:none; }
+.foot-brand-text{ display:flex; flex-direction:column; line-height:1; }
+.foot-brand-text b{
+  color:#fff; font-size:1rem;
+  letter-spacing:.045em; font-weight:900;
+}
+.foot-brand-text span{
+  font-size:.56rem; font-weight:800;
+  letter-spacing:.2em; text-transform:uppercase;
+  color:var(--gold); margin-top:4px;
+}
+.foot-tag{
+  font-size:.74rem; font-weight:800;
+  letter-spacing:.16em; text-transform:uppercase;
+  color:var(--gold);
+  margin-bottom:.7rem;
+}
+.foot-about{
+  font-size:.88rem;
+  line-height:1.65;
+  color:#8fa2b7;
+  max-width:36ch;
+}
+
+.foot-title{
+  color:#fff;
+  font-size:.76rem;
+  font-weight:800;
+  letter-spacing:.16em;
+  text-transform:uppercase;
+  margin-bottom:1.05rem;
+}
+.foot-list{ display:grid; gap:.6rem; }
+.foot-list a,
+.foot-list span{
+  font-size:.88rem;
+  color:#9fb2c6;
+  transition:color var(--t-fast);
+}
+.foot-list a{
+  display:inline-flex; align-items:center; gap:.5rem;
+}
+.foot-list a:hover{ color:var(--gold-light); }
+.foot-list svg{ width:15px; height:15px; flex:none; opacity:.75; }
+
+.foot-bottom{
+  border-top:1px solid rgba(255,255,255,.09);
+  padding-block:1.3rem;
+  display:flex; flex-wrap:wrap;
+  gap:.6rem 1.2rem;
+  align-items:center; justify-content:space-between;
+  font-size:.79rem;
+  color:#7e91a6;
+}
+.foot-bottom a{ color:#9fb2c6; }
+.foot-bottom a:hover{ color:var(--gold-light); }
+
+/* --------------------------------------------------------------------------
+   22 · FLOATING MOBILE CONTACT
+   -------------------------------------------------------------------------- */
+.floating-contact{
+  display:none;
+  position:fixed;
+  right:16px;
+  bottom:calc(16px + env(safe-area-inset-bottom, 0px));
+  z-index:70;
+  flex-direction:column;
+  gap:.6rem;
+}
+.fab{
+  width:54px; height:54px;
+  border-radius:50%;
+  display:grid; place-items:center;
+  box-shadow:0 10px 26px rgba(6,24,41,.28);
+  border:1px solid rgba(255,255,255,.18);
+  transition:transform var(--t-fast), box-shadow var(--t-fast);
+}
+.fab:active{ transform:scale(.94); }
+.fab svg{ width:24px; height:24px; }
+.fab-wa{ background:var(--wa); color:#fff; }
+.fab-call{ background:var(--navy-800); color:#fff; }
+
+/* --------------------------------------------------------------------------
+   23 · RESPONSIVE
+   -------------------------------------------------------------------------- */
+@media (max-width:1080px){
+  .why-grid{ grid-template-columns:repeat(2,1fr); }
+}
+
+@media (max-width:980px){
+  .nav-links{ display:none; }
+  .nav-toggle{ display:inline-flex; }
+
+  .hero-inner{ grid-template-columns:1fr; gap:2.4rem; }
+  .hero-art{ max-width:340px; }
+  .hero-lead{ max-width:none; }
+
+  .about-grid{ grid-template-columns:1fr; gap:2.4rem; }
+  .vm-grid{ grid-template-columns:1fr; }
+  .course-grid{ grid-template-columns:repeat(2,1fr); }
+
+  .steps{ grid-template-columns:repeat(3,1fr); gap:1.8rem 1.2rem; }
+  .steps::before{ display:none; }
+
+  .career-grid{ grid-template-columns:1fr; }
+  .contact-grid{ grid-template-columns:1fr; }
+  .foot-grid{ grid-template-columns:1fr 1fr; gap:2.2rem; }
+}
+
+@media (max-width:860px){
+  .topbar .wrap{ justify-content:center; text-align:center; }
+  .topbar-links{ justify-content:center; }
+}
+
+@media (max-width:760px){
+  .value-grid{ grid-template-columns:repeat(2,1fr); gap:0; }
+  .value-item{ padding:.9rem 1rem; border-right:0; }
+  .value-item:nth-child(odd){
+    border-right:1px solid rgba(255,255,255,.1);
+    padding-left:0;
+  }
+  .value-item:nth-child(1),
+  .value-item:nth-child(2){ border-bottom:1px solid rgba(255,255,255,.1); }
+  .value-item:nth-child(3){ padding-left:0; }
+
+  .floating-contact{ display:flex; }
+  .site-footer{ padding-bottom:calc(104px + env(safe-area-inset-bottom, 0px)); }
+  .header-cta{ display:none; }
+
+  .steps{ grid-template-columns:repeat(2,1fr); }
+}
+
+@media (max-width:620px){
+  .topbar{ font-size:.75rem; }
+  .topbar-tag{ font-size:.72rem; }
+
+  .course-grid{ grid-template-columns:1fr; }
+  .why-grid{ grid-template-columns:1fr; }
+  .contact-actions{ grid-template-columns:1fr; }
+
+  .brand-name{ font-size:.94rem; }
+  .brand-sub{ font-size:.53rem; letter-spacing:.16em; }
+  .brand-mark{ width:38px; height:38px; }
+}
+
+@media (max-width:520px){
+  .topbar-tag{ display:none; }
+  .topbar .wrap{ min-height:36px; }
+}
+
+@media (max-width:480px){
+  .btn-row{ flex-direction:column; }
+  .btn-row .btn{ width:100%; }
+  .filter-btn{ padding:.5rem .9rem; font-size:.79rem; }
+  .steps{ grid-template-columns:1fr; }
+  .step{
+    text-align:left;
+    display:grid;
+    grid-template-columns:54px 1fr;
+    gap:0 1rem;
+    align-items:start;
+  }
+  .step-num{ margin:0; }
+  .step h3,
+  .step p{ grid-column:2; }
+  .foot-grid{ grid-template-columns:1fr; }
+  .final-cta .btn-row{ flex-direction:column; }
+}
+
+@media (max-width:380px){
+  .value-grid{ grid-template-columns:1fr; }
+  .value-item{
+    border-right:0 !important;
+    padding-left:0 !important;
+    padding-right:0;
+  }
+  .value-item:nth-child(3){ border-bottom:1px solid rgba(255,255,255,.1); }
+}
+
+/* --------------------------------------------------------------------------
+   24 · REDUCED MOTION + PRINT
+   -------------------------------------------------------------------------- */
+@media (prefers-reduced-motion: reduce){
+  html{ scroll-behavior:auto; }
+  *,*::before,*::after{
+    animation-duration:.001ms !important;
+    animation-iteration-count:1 !important;
+    transition-duration:.001ms !important;
+  }
+  .js .reveal{ opacity:1 !important; transform:none !important; }
+  .card:hover,
+  .course-card:hover,
+  .why-card:hover,
+  .career-card:hover,
+  .vm-card:hover,
+  .step:hover .step-num{ transform:none; }
+}
+
+@media print{
+  .site-header,
+  .topbar,
+  .floating-contact,
+  .final-cta,
+  .mobile-nav{ display:none !important; }
+  body{ color:#000; background:#fff; }
+  .section{ padding-block:20px; }
+  a[href^="http"]::after{ content:" (" attr(href) ")"; font-size:.75em; color:#555; }
+}
+</style>
+</head>
+<body>
+
+<a class="skip-link" href="#main">Skip to main content</a>
+
+<!-- ==========================================================================
+     TOP BAR
+     ========================================================================== -->
+<div class="topbar">
+  <div class="wrap">
+    <span class="topbar-tag">Professional Safety Training &amp; HSE Development</span>
+    <div class="topbar-links">
+      <a href="tel:+917800305500" aria-label="Call FORTIS SAFETY CENTER at 78003 05500">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.2a2 2 0 0 1 2.1-.5c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2Z"/>
+        </svg>
+        78003 05500
+      </a>
+      <span class="topbar-sep" aria-hidden="true"></span>
+      <a href="mailto:safetycenter537@gmail.com" aria-label="Email FORTIS SAFETY CENTER">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <rect x="2" y="4" width="20" height="16" rx="2"/>
+          <path d="m2 7 10 6 10-6"/>
+        </svg>
+        safetycenter537@gmail.com
+      </a>
+    </div>
+  </div>
+</div>
+
+<!-- ==========================================================================
+     HEADER / NAVIGATION
+     ========================================================================== -->
+<header class="site-header" id="siteHeader">
+  <div class="wrap header-inner">
+
+    <a class="brand" href="#home" aria-label="FORTIS SAFETY CENTER — go to top">
+      <svg class="brand-mark" viewBox="0 0 64 64" role="img" aria-label="FORTIS SAFETY CENTER emblem">
+        <defs>
+          <linearGradient id="bmShield" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stop-color="#113257"/>
+            <stop offset="1" stop-color="#061829"/>
+          </linearGradient>
+          <linearGradient id="bmGold" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0" stop-color="#eec25c"/>
+            <stop offset="1" stop-color="#c8941f"/>
+          </linearGradient>
+        </defs>
+        <path d="M32 4 56 13v19c0 12.8-9.6 22.6-24 28C17.6 54.6 8 44.8 8 32V13Z" fill="url(#bmShield)"/>
+        <path d="M32 8.5 51.8 16v16c0 10.7-8 19-19.8 23.6C20.2 51 12.2 42.7 12.2 32V16Z"
+              fill="none" stroke="url(#bmGold)" stroke-width="1.4" opacity=".85"/>
+        <path d="M22 33.5c0-6.4 4.5-11 10-11s10 4.6 10 11Z" fill="url(#bmGold)"/>
+        <rect x="17.5" y="33.5" width="29" height="4.4" rx="2.2" fill="url(#bmGold)"/>
+        <rect x="29.3" y="18.4" width="5.4" height="4.6" rx="2" fill="url(#bmGold)"/>
+      </svg>
+      <span class="brand-text">
+        <span class="brand-name">FORTIS</span>
+        <span class="brand-sub">Safety Center</span>
+      </span>
+    </a>
+
+    <nav class="nav-links" aria-label="Primary">
+      <a class="nav-link" href="#home">Home</a>
+      <a class="nav-link" href="#about">About</a>
+      <a class="nav-link" href="#courses">Courses</a>
+      <a class="nav-link" href="#career">Career</a>
+      <a class="nav-link" href="#contact">Contact</a>
+    </nav>
+
+    <div class="header-actions">
+      <a class="btn btn-primary header-cta" href="#contact">Enquire Now</a>
+      <button class="nav-toggle" id="navToggle" type="button"
+              aria-label="Open navigation menu"
+              aria-expanded="false"
+              aria-controls="mobileNav">
+        <span class="bars" aria-hidden="true">
+          <span></span><span></span><span></span>
+        </span>
+      </button>
+    </div>
+
+  </div>
+
+  <!-- Mobile navigation panel -->
+  <nav class="mobile-nav" id="mobileNav" aria-label="Mobile navigation" aria-hidden="true">
+    <a class="m-link" href="#home">Home</a>
+    <a class="m-link" href="#about">About</a>
+    <a class="m-link" href="#courses">Courses</a>
+    <a class="m-link" href="#career">Career</a>
+    <a class="m-link" href="#contact">Contact</a>
+    <div class="mobile-actions">
+      <a class="btn btn-primary btn-block" href="#contact">Enquire Now</a>
+      <a class="btn btn-wa btn-block" href="https://wa.me/917800305500" target="_blank" rel="noopener noreferrer">WhatsApp Us</a>
+      <a class="btn btn-outline btn-block" href="tel:+917800305500">Call 78003 05500</a>
+    </div>
+  </nav>
+</header>
+
+<main id="main">
+
+  <!-- ========================================================================
+       HERO
+       ======================================================================== -->
+  <section class="hero" id="home" aria-labelledby="hero-heading">
+    <div class="wrap hero-inner">
+
+      <div class="hero-copy">
+        <span class="eyebrow">Safety • Competence • Leadership</span>
+        <h1 id="hero-heading">
+          Build Safer Workplaces.
+          <span class="accent">Develop Safety Leaders.</span>
+        </h1>
+        <p class="hero-lead">
+          FORTIS SAFETY CENTER is a professional safety training institute based in
+          Kushinagar, Uttar Pradesh — delivering classroom-based safety education,
+          practical learning and HSE development for freshers, working professionals,
+          supervisors and organizations.
+        </p>
+
+        <div class="btn-row">
+          <a class="btn btn-primary" href="#courses">
+            Explore Courses
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M5 12h14M13 6l6 6-6 6"/>
+            </svg>
+          </a>
+          <a class="btn btn-outline-light" href="https://wa.me/917800305500" target="_blank" rel="noopener noreferrer">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 2a8 8 0 0 1 0 16 8 8 0 0 1-4.1-1.1l-.3-.2-2.9.8.8-2.8-.2-.3A8 8 0 0 1 12 4Zm-3.3 4.3c-.2 0-.5.1-.7.3-.2.3-.8.9-.8 1.9s.7 2 .8 2.1c.1.2 1.4 2.2 3.4 3 1.7.7 2 .5 2.4.5.4 0 1.3-.5 1.5-1.1.2-.5.2-1 .1-1.1l-.6-.3-1.2-.6c-.2-.1-.3-.1-.5.1l-.6.8c-.1.1-.2.2-.4.1-.2-.1-.9-.3-1.7-1a6.3 6.3 0 0 1-1.2-1.4c-.1-.2 0-.4.1-.5l.4-.4.2-.5v-.5l-.6-1.4c-.2-.4-.3-.4-.5-.4h-.1Z"/>
+            </svg>
+            WhatsApp Us
+          </a>
+        </div>
+
+        <ul class="hero-points">
+          <li class="hero-point">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m4 12.5 5 5L20 6.5"/></svg>
+            Classroom Training
+          </li>
+          <li class="hero-point">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m4 12.5 5 5L20 6.5"/></svg>
+            Practical Learning
+          </li>
+          <li class="hero-point">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m4 12.5 5 5L20 6.5"/></svg>
+            Career Guidance
+          </li>
+          <li class="hero-point">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m4 12.5 5 5L20 6.5"/></svg>
+            Corporate Programs
+          </li>
+        </ul>
+      </div>
+
+      <div class="hero-art-wrap">
+        <svg class="hero-art" viewBox="0 0 560 560" role="img"
+             aria-label="Illustration of a protective safety shield with a hard hat, representing workplace safety, risk prevention and HSE training">
+          <defs>
+            <linearGradient id="shieldFill" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0" stop-color="#1b4570"/>
+              <stop offset="1" stop-color="#061829"/>
+            </linearGradient>
+            <linearGradient id="goldGrad" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0" stop-color="#eec25c"/>
+              <stop offset="1" stop-color="#c8941f"/>
+            </linearGradient>
+            <linearGradient id="helmetGrad" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0" stop-color="#ffffff"/>
+              <stop offset="1" stop-color="#b9cbde"/>
+            </linearGradient>
+            <radialGradient id="heroGlow" cx="50%" cy="45%" r="55%">
+              <stop offset="0" stop-color="#d9a72e" stop-opacity=".22"/>
+              <stop offset="1" stop-color="#d9a72e" stop-opacity="0"/>
+            </radialGradient>
+          </defs>
+
+          <circle cx="280" cy="280" r="250" fill="url(#heroGlow)"/>
+
+          <circle class="spin-slow" cx="280" cy="280" r="248" fill="none"
+                  stroke="#ffffff" stroke-opacity=".16" stroke-width="1.2" stroke-dasharray="3 12"/>
+          <circle cx="280" cy="280" r="212" fill="none"
+                  stroke="#d9a72e" stroke-opacity=".28" stroke-width="1"/>
+          <circle class="pulse-soft" cx="280" cy="280" r="196" fill="none"
+                  stroke="#ffffff" stroke-opacity=".1" stroke-width="1"/>
+
+          <g stroke="#ffffff" stroke-opacity=".22" stroke-width="1.6">
+            <line x1="280" y1="26" x2="280" y2="44"/>
+            <line x1="280" y1="516" x2="280" y2="534"/>
+            <line x1="26" y1="280" x2="44" y2="280"/>
+            <line x1="516" y1="280" x2="534" y2="280"/>
+          </g>
+
+          <path d="M280 72 452 138v142c0 92-72 164-172 202-100-38-172-110-172-202V138Z"
+                fill="url(#shieldFill)" stroke="url(#goldGrad)" stroke-width="2.4"/>
+          <path d="M280 96 430 154v126c0 80-63 143-150 177-87-34-150-97-150-177V154Z"
+                fill="none" stroke="#ffffff" stroke-opacity=".14" stroke-width="1.4"/>
+
+          <path d="M200 322c0-50 35-92 80-92s80 42 80 92Z" fill="url(#helmetGrad)"/>
+          <path d="M206 318c0-47 32-84 74-84" fill="none"
+                stroke="url(#goldGrad)" stroke-width="9" stroke-linecap="round"/>
+          <rect x="176" y="322" width="208" height="22" rx="11" fill="url(#helmetGrad)"/>
+          <rect x="264" y="184" width="32" height="22" rx="9" fill="url(#goldGrad)"/>
+
+          <g opacity=".85">
+            <path d="M212 396l26-14h34l-26 14z" fill="url(#goldGrad)"/>
+            <path d="M290 396l26-14h34l-26 14z" fill="url(#goldGrad)"/>
+            <path d="M250 424l26-14h34l-26 14z" fill="url(#goldGrad)"/>
+          </g>
+
+          <line x1="152" y1="452" x2="408" y2="452"
+                stroke="#ffffff" stroke-opacity=".18" stroke-width="1.6"/>
+        </svg>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       VALUE STRIP
+       ======================================================================== -->
+  <section class="value-strip" aria-label="What FORTIS SAFETY CENTER offers">
+    <div class="wrap">
+      <ul class="value-grid">
+
+        <li class="value-item">
+          <span class="value-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M3 6h18M3 12h18M3 18h12"/><circle cx="19" cy="18" r="2"/>
+            </svg>
+          </span>
+          <div>
+            <strong>Classroom</strong>
+            <span>Professional Training</span>
+          </div>
+        </li>
+
+        <li class="value-item">
+          <span class="value-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 3 20 7v6c0 4.4-3.3 7.7-8 9-4.7-1.3-8-4.6-8-9V7Z"/>
+              <path d="m9 12 2 2 4-4"/>
+            </svg>
+          </span>
+          <div>
+            <strong>Practical</strong>
+            <span>Workplace Learning</span>
+          </div>
+        </li>
+
+        <li class="value-item">
+          <span class="value-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M3 20h18"/><path d="M6 20V10M12 20V4M18 20v-7"/>
+            </svg>
+          </span>
+          <div>
+            <strong>Career</strong>
+            <span>Guidance &amp; Support</span>
+          </div>
+        </li>
+
+        <li class="value-item">
+          <span class="value-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M3 21V8l6 3.5V8l6 3.5V5l6 4v12Z"/><path d="M3 21h18"/>
+            </svg>
+          </span>
+          <div>
+            <strong>Corporate</strong>
+            <span>Customized Programs</span>
+          </div>
+        </li>
+
+      </ul>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       ABOUT
+       ======================================================================== -->
+  <section class="section" id="about" aria-labelledby="about-heading">
+    <div class="wrap about-grid">
+
+      <div class="about-copy reveal">
+        <span class="eyebrow">About Us</span>
+        <h2 id="about-heading">Training People. Strengthening Safety Culture.</h2>
+
+        <p class="lead">
+          FORTIS SAFETY CENTER is a professional safety training institute based in
+          Kushinagar, Uttar Pradesh, focused on practical safety education and HSE development.
+        </p>
+        <p>
+          Our classroom-based programs are designed to build knowledge, hazard awareness,
+          risk-control understanding and professional confidence — connecting what is learned
+          in the training room with what happens on a real workplace.
+        </p>
+
+        <ul class="checklist">
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m4 12.5 5 5L20 6.5"/></svg>
+            Classroom-based professional training
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m4 12.5 5 5L20 6.5"/></svg>
+            Practical and workplace-oriented learning
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m4 12.5 5 5L20 6.5"/></svg>
+            Career guidance and interview preparation
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m4 12.5 5 5L20 6.5"/></svg>
+            Individual and corporate training support
+          </li>
+        </ul>
+      </div>
+
+      <div class="glance reveal d2">
+        <p class="glance-title">At a Glance</p>
+        <dl class="glance-list">
+          <div class="glance-row">
+            <dt>Institute</dt>
+            <dd>FORTIS SAFETY CENTER</dd>
+          </div>
+          <div class="glance-row">
+            <dt>Location</dt>
+            <dd>Kushinagar, Uttar Pradesh</dd>
+          </div>
+          <div class="glance-row">
+            <dt>Training Mode</dt>
+            <dd>Classroom &amp; Practical</dd>
+          </div>
+          <div class="glance-row">
+            <dt>Focus Areas</dt>
+            <dd>Safety &amp; HSE Development</dd>
+          </div>
+          <div class="glance-row">
+            <dt>Learners</dt>
+            <dd>Individuals &amp; Organizations</dd>
+          </div>
+          <div class="glance-row">
+            <dt>Career Support</dt>
+            <dd>Guidance &amp; Interview Prep</dd>
+          </div>
+        </dl>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       VISION & MISSION
+       ======================================================================== -->
+  <section class="section section--dark" aria-labelledby="vm-heading">
+    <div class="wrap">
+      <div class="sec-head">
+        <span class="eyebrow">Our Direction</span>
+        <h2 id="vm-heading">Vision &amp; Mission</h2>
+        <p>The principles that guide how we teach safety at FORTIS SAFETY CENTER.</p>
+      </div>
+
+      <div class="vm-grid">
+
+        <article class="vm-card reveal">
+          <span class="vm-num" aria-hidden="true">01</span>
+          <span class="vm-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M2 12s3.6-6.5 10-6.5S22 12 22 12s-3.6 6.5-10 6.5S2 12 2 12Z"/>
+              <circle cx="12" cy="12" r="2.8"/>
+            </svg>
+          </span>
+          <h3>Our Vision</h3>
+          <p>
+            To contribute to safer workplaces by developing competent safety professionals
+            and responsible safety leaders.
+          </p>
+        </article>
+
+        <article class="vm-card reveal d1">
+          <span class="vm-num" aria-hidden="true">02</span>
+          <span class="vm-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="4.5"/><circle cx="12" cy="12" r="1"/>
+            </svg>
+          </span>
+          <h3>Our Mission</h3>
+          <p>
+            To provide structured, accessible and practical safety education that connects
+            professional knowledge with workplace application.
+          </p>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       COURSES
+       ======================================================================== -->
+  <section class="section section--surface" id="courses" aria-labelledby="courses-heading">
+    <div class="wrap">
+
+      <div class="sec-head">
+        <span class="eyebrow">Our Courses</span>
+        <h2 id="courses-heading">Professional Safety Training Programs</h2>
+        <p>
+          Structured learning pathways for people starting or advancing their career in
+          safety, HSE and industrial safety.
+        </p>
+      </div>
+
+      <div class="filters" role="group" aria-label="Filter courses by category">
+        <button class="filter-btn" type="button" data-filter="all" aria-pressed="true">All Programs</button>
+        <button class="filter-btn" type="button" data-filter="global" aria-pressed="false">Global Programs</button>
+        <button class="filter-btn" type="button" data-filter="emergency" aria-pressed="false">Emergency Response</button>
+        <button class="filter-btn" type="button" data-filter="industrial" aria-pressed="false">Industrial Safety</button>
+        <button class="filter-btn" type="button" data-filter="corporate" aria-pressed="false">Corporate</button>
+      </div>
+
+      <p class="sr-only" id="filterStatus" role="status" aria-live="polite"></p>
+
+      <div class="course-grid" id="courseGrid">
+
+        <!-- 1 -->
+        <article class="course-card reveal" data-cat="global">
+          <div class="course-top">
+            <span class="course-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 3 19 6v6c0 4.5-3 7.6-7 9-4-1.4-7-4.5-7-9V6Z"/><path d="m9 12 2 2 4-4"/>
+              </svg>
+            </span>
+            <span class="course-tag">Global Program</span>
+          </div>
+          <h3>NEBOSH IGC</h3>
+          <p>Health, safety, risk assessment and workplace risk-management learning for HSE professionals.</p>
+          <div class="course-foot">
+            <span class="course-note">Contact us for course details</span>
+            <a class="course-link" href="#contact">
+              Enquire
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+            </a>
+          </div>
+        </article>
+
+        <!-- 2 -->
+        <article class="course-card reveal d1" data-cat="global">
+          <div class="course-top">
+            <span class="course-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="3.2"/>
+                <path d="M12 2.5v3M12 18.5v3M2.5 12h3M18.5 12h3M5.2 5.2l2.1 2.1M16.7 16.7l2.1 2.1M18.8 5.2l-2.1 2.1M7.3 16.7l-2.1 2.1"/>
+              </svg>
+            </span>
+            <span class="course-tag">Global Program</span>
+          </div>
+          <h3>IOSH</h3>
+          <p>Practical safety awareness and management-focused learning for workplace responsibilities.</p>
+          <div class="course-foot">
+            <span class="course-note">Contact us for course details</span>
+            <a class="course-link" href="#contact">
+              Enquire
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+            </a>
+          </div>
+        </article>
+
+        <!-- 3 -->
+        <article class="course-card reveal d2" data-cat="global">
+          <div class="course-top">
+            <span class="course-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="6" y="4" width="12" height="17" rx="2"/>
+                <path d="M9.5 4V3h5v1"/><path d="M9 10h6M9 14h6M9 18h3.5"/>
+              </svg>
+            </span>
+            <span class="course-tag">Global Program</span>
+          </div>
+          <h3>OSHA</h3>
+          <p>Workplace safety concepts, hazard awareness and practical control measures.</p>
+          <div class="course-foot">
+            <span class="course-note">Contact us for course details</span>
+            <a class="course-link" href="#contact">
+              Enquire
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+            </a>
+          </div>
+        </article>
+
+        <!-- 4 -->
+        <article class="course-card reveal" data-cat="emergency">
+          <div class="course-top">
+            <span class="course-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="3" y="6" width="18" height="14" rx="2.4"/>
+                <path d="M12 10.5v5M9.5 13h5"/>
+                <path d="M8 6V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v1"/>
+              </svg>
+            </span>
+            <span class="course-tag">Emergency Response</span>
+          </div>
+          <h3>First Aid</h3>
+          <p>Essential first-aid awareness and emergency response skills for workplace teams.</p>
+          <div class="course-foot">
+            <span class="course-note">Contact us for course details</span>
+            <a class="course-link" href="#contact">
+              Enquire
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+            </a>
+          </div>
+        </article>
+
+        <!-- 5 -->
+        <article class="course-card reveal d1" data-cat="emergency">
+          <div class="course-top">
+            <span class="course-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 3c2.6 3 5 5.6 5 9a5 5 0 0 1-10 0c0-1.6.7-2.9 1.6-4 .3 1 .9 1.7 1.7 2.1C10.2 8.4 11 6 12 3Z"/>
+              </svg>
+            </span>
+            <span class="course-tag">Emergency Response</span>
+          </div>
+          <h3>Fire Safety</h3>
+          <p>Fire prevention, emergency preparedness, response and safe workplace practices.</p>
+          <div class="course-foot">
+            <span class="course-note">Contact us for course details</span>
+            <a class="course-link" href="#contact">
+              Enquire
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+            </a>
+          </div>
+        </article>
+
+        <!-- 6 -->
+        <article class="course-card reveal d2" data-cat="industrial">
+          <div class="course-top">
+            <span class="course-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M3 21V11l5 3V11l5 3V8l6 4v9Z"/><path d="M3 21h18"/>
+              </svg>
+            </span>
+            <span class="course-tag">Industrial Safety</span>
+          </div>
+          <h3>HSE &amp; Industrial Safety</h3>
+          <p>Industry-oriented learning covering hazards, controls and safe work practices.</p>
+          <div class="course-foot">
+            <span class="course-note">Contact us for course details</span>
+            <a class="course-link" href="#contact">
+              Enquire
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+            </a>
+          </div>
+        </article>
+
+        <!-- 7 -->
+        <article class="course-card reveal" data-cat="industrial">
+          <div class="course-top">
+            <span class="course-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4 3v18M20 3v18M4 8h16M4 16h16M4 3l16 18M20 3 4 21"/>
+              </svg>
+            </span>
+            <span class="course-tag">Industrial Safety</span>
+          </div>
+          <h3>Scaffolding Safety</h3>
+          <p>Safety awareness for scaffold users, supervisors and workplace teams.</p>
+          <div class="course-foot">
+            <span class="course-note">Contact us for course details</span>
+            <a class="course-link" href="#contact">
+              Enquire
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+            </a>
+          </div>
+        </article>
+
+        <!-- 8 -->
+        <article class="course-card reveal d1" data-cat="industrial">
+          <div class="course-top">
+            <span class="course-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M2.5 9 12 4.5 21.5 9 12 13.5Z"/>
+                <path d="M6 11.2V16c0 1.7 2.7 3 6 3s6-1.3 6-3v-4.8"/>
+                <path d="M21.5 9v5"/>
+              </svg>
+            </span>
+            <span class="course-tag">Industrial Safety</span>
+          </div>
+          <h3>Advanced Diploma in Industrial Safety</h3>
+          <p>Professional industrial-safety development program. Affiliation and approval details are subject to applicable authorization.</p>
+          <div class="course-foot">
+            <span class="course-note">Enquire for availability and fees</span>
+            <a class="course-link" href="#contact">
+              Enquire
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+            </a>
+          </div>
+        </article>
+
+        <!-- 9 -->
+        <article class="course-card reveal d2" data-cat="corporate">
+          <div class="course-top">
+            <span class="course-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="4" y="3" width="16" height="18" rx="1.6"/>
+                <path d="M9 7.5h2M13 7.5h2M9 11.5h2M13 11.5h2"/>
+                <path d="M9.5 21v-5h5v5"/>
+              </svg>
+            </span>
+            <span class="course-tag">Corporate</span>
+          </div>
+          <h3>Corporate Safety Training</h3>
+          <p>Customized HSE programs for organizations, teams, supervisors and industrial workplaces.</p>
+          <div class="course-foot">
+            <span class="course-note">Customized to your organization</span>
+            <a class="course-link" href="#contact">
+              Enquire
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+            </a>
+          </div>
+        </article>
+
+      </div>
+
+      <p class="courses-note">
+        <strong>Note:</strong> Course availability, fees, duration and batch details are confirmed
+        directly by the institute. Please contact us for current information.
+      </p>
+
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       WHY CHOOSE FORTIS
+       ======================================================================== -->
+  <section class="section" aria-labelledby="why-heading">
+    <div class="wrap">
+
+      <div class="sec-head">
+        <span class="eyebrow">Why FORTIS</span>
+        <h2 id="why-heading">How We Approach Safety Training</h2>
+        <p>Our training is built around practical understanding — not just theory.</p>
+      </div>
+
+      <div class="why-grid">
+
+        <article class="why-card reveal">
+          <span class="why-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M3 6h18M3 12h18M3 18h12"/><circle cx="19" cy="18" r="2"/>
+            </svg>
+          </span>
+          <h3>Classroom-Based Learning</h3>
+          <p>Structured instructor-led sessions that build a clear foundation in safety and HSE concepts.</p>
+        </article>
+
+        <article class="why-card reveal d1">
+          <span class="why-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M14.7 6.3a4 4 0 0 0 5.3 5.3l-8.5 8.5a2.8 2.8 0 0 1-4-4Z"/>
+              <path d="M16.5 3.5 21 8"/>
+            </svg>
+          </span>
+          <h3>Practical Orientation</h3>
+          <p>Learning focused on real workplace hazards, controls and safe working practice.</p>
+        </article>
+
+        <article class="why-card reveal d2">
+          <span class="why-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 3 20 7v6c0 4.4-3.3 7.7-8 9-4.7-1.3-8-4.6-8-9V7Z"/>
+              <path d="M9.2 12.2 11 14l3.8-4"/>
+            </svg>
+          </span>
+          <h3>Career Guidance</h3>
+          <p>Support with career direction, interview preparation and professional communication.</p>
+        </article>
+
+        <article class="why-card reveal">
+          <span class="why-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M3 21V8l6 3.5V8l6 3.5V5l6 4v12Z"/><path d="M3 21h18"/>
+            </svg>
+          </span>
+          <h3>Individual &amp; Corporate</h3>
+          <p>Programs for individual learners as well as customized training for organizations and teams.</p>
+        </article>
+
+        <article class="why-card reveal d1">
+          <span class="why-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M4 5h16M4 12h16M4 19h10"/>
+              <circle cx="19" cy="19" r="2"/>
+            </svg>
+          </span>
+          <h3>Structured Learning</h3>
+          <p>Learning pathways that connect professional knowledge with practical workplace application.</p>
+        </article>
+
+        <article class="why-card reveal d2">
+          <span class="why-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="9"/>
+              <path d="M12 7v5l3 2"/>
+            </svg>
+          </span>
+          <h3>Career-Focused Support</h3>
+          <p>Support that continues after training — through guidance, interview preparation and assistance.</p>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       PROCESS / HOW TO GET STARTED
+       ======================================================================== -->
+  <section class="section section--surface" aria-labelledby="process-heading">
+    <div class="wrap">
+
+      <div class="sec-head">
+        <span class="eyebrow">How to Get Started</span>
+        <h2 id="process-heading">A Simple Enquiry Journey</h2>
+        <p>From first contact to career support — here is how most learners move forward with us.</p>
+      </div>
+
+      <p class="process-note">
+        This is a typical enquiry journey. Actual admission steps, requirements and documentation
+        are confirmed directly by the institute.
+      </p>
+
+      <ol class="steps">
+
+        <li class="step reveal">
+          <span class="step-num" aria-hidden="true">01</span>
+          <h3>Enquire</h3>
+          <p>Reach us by phone, WhatsApp or email with your interest and questions.</p>
+        </li>
+
+        <li class="step reveal d1">
+          <span class="step-num" aria-hidden="true">02</span>
+          <h3>Discuss Course</h3>
+          <p>Talk through your background, goals and the programs that may suit you.</p>
+        </li>
+
+        <li class="step reveal d2">
+          <span class="step-num" aria-hidden="true">03</span>
+          <h3>Select Program</h3>
+          <p>Confirm the course, batch and admission details with the institute.</p>
+        </li>
+
+        <li class="step reveal d3">
+          <span class="step-num" aria-hidden="true">04</span>
+          <h3>Begin Training</h3>
+          <p>Attend classroom sessions and practical, workplace-oriented learning.</p>
+        </li>
+
+        <li class="step reveal d3">
+          <span class="step-num" aria-hidden="true">05</span>
+          <h3>Career Support</h3>
+          <p>Access career guidance, interview preparation and placement assistance for eligible learners.</p>
+        </li>
+
+      </ol>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       CAREER SUPPORT
+       ======================================================================== -->
+  <section class="section" id="career" aria-labelledby="career-heading">
+    <div class="wrap">
+
+      <div class="sec-head">
+        <span class="eyebrow">Career Support</span>
+        <h2 id="career-heading">Learn. Prepare. Progress.</h2>
+        <p>We support learners beyond the classroom through career-focused guidance.</p>
+      </div>
+
+      <div class="career-grid">
+
+        <article class="career-card reveal">
+          <span class="career-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="9"/><path d="m15.5 8.5-2 5-5 2 2-5Z"/>
+            </svg>
+          </span>
+          <h3>Career Guidance</h3>
+          <p>Guidance for learners planning careers in HSE and industrial safety.</p>
+        </article>
+
+        <article class="career-card reveal d1">
+          <span class="career-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21 12a8 8 0 0 1-11.6 7.1L4 21l1.9-5.4A8 8 0 1 1 21 12Z"/>
+              <path d="M9 11h6M9 14.5h4"/>
+            </svg>
+          </span>
+          <h3>Interview Preparation</h3>
+          <p>Practical preparation for safety interviews and professional communication.</p>
+        </article>
+
+        <article class="career-card reveal d2">
+          <span class="career-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="3" y="7" width="18" height="13" rx="2"/>
+              <path d="M9 7V5.5A1.5 1.5 0 0 1 10.5 4h3A1.5 1.5 0 0 1 15 5.5V7"/>
+              <path d="M3 12h18"/>
+            </svg>
+          </span>
+          <h3>Placement Assistance</h3>
+          <p>Career and placement assistance for eligible learners, subject to applicable terms and opportunities.</p>
+        </article>
+
+      </div>
+
+      <p class="career-disclaimer">
+        <strong>Please note:</strong> Career and placement assistance is provided for eligible learners
+        and is subject to applicable terms and available opportunities. FORTIS SAFETY CENTER does not
+        guarantee employment or salary outcomes.
+      </p>
+
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       FOUNDER / LEADERSHIP
+       ======================================================================== -->
+  <section class="section founder" aria-labelledby="founder-heading">
+    <div class="wrap founder-inner">
+
+      <div class="founder-avatar" aria-hidden="true">GS</div>
+
+      <span class="eyebrow">Leadership</span>
+      <h2 id="founder-heading">Founder &amp; Director</h2>
+
+      <p class="founder-name">Mr. Gufran Siddiqui</p>
+      <p class="founder-role">Founder &amp; Director</p>
+
+      <p>
+        Leading FORTIS SAFETY CENTER with a focus on professional safety education,
+        practical learning and career development.
+      </p>
+
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       FAQ
+       ======================================================================== -->
+  <section class="section" aria-labelledby="faq-heading">
+    <div class="wrap">
+
+      <div class="sec-head">
+        <span class="eyebrow">Common Questions</span>
+        <h2 id="faq-heading">Frequently Asked Questions</h2>
+        <p>Quick answers about courses, contact and career support at FORTIS SAFETY CENTER.</p>
+      </div>
+
+      <div class="faq-list">
+
+        <details class="faq-item">
+          <summary>
+            <span>What courses does FORTIS SAFETY CENTER offer?</span>
+            <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="m6 9 6 6 6-6"/>
+            </svg>
+          </summary>
+          <div class="faq-body">
+            <p>
+              We offer NEBOSH IGC, IOSH, OSHA, First Aid, Fire Safety, HSE &amp; Industrial Safety,
+              Scaffolding Safety, Advanced Diploma in Industrial Safety and Corporate Safety Training.
+              See the <a href="#courses">Courses section</a> for a short description of each program.
+            </p>
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary>
+            <span>Where is FORTIS SAFETY CENTER located?</span>
+            <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="m6 9 6 6 6-6"/>
+            </svg>
+          </summary>
+          <div class="faq-body">
+            <p>
+              We are located at Hotel, Kasia – Gorakhpur Rd, near Buddha Marg,
+              Kushinagar, Uttar Pradesh, India. You can find directions from the
+              <a href="#contact">Contact section</a>.
+            </p>
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary>
+            <span>How do I enquire about a course?</span>
+            <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="m6 9 6 6 6-6"/>
+            </svg>
+          </summary>
+          <div class="faq-body">
+            <p>
+              You can reach us by phone at <a href="tel:+917800305500">78003 05500</a>, on WhatsApp at
+              <a href="https://wa.me/917800305500" target="_blank" rel="noopener noreferrer">+91 78003 05500</a>,
+              or by email at <a href="mailto:safetycenter537@gmail.com">safetycenter537@gmail.com</a>.
+              You can also use the enquiry form on this page, which opens a pre-filled WhatsApp message.
+            </p>
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary>
+            <span>Do you offer training for companies and organizations?</span>
+            <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="m6 9 6 6 6-6"/>
+            </svg>
+          </summary>
+          <div class="faq-body">
+            <p>
+              Yes. Corporate Safety Training is available and can be customized for organizations,
+              teams, supervisors and industrial workplaces. Please contact us to discuss your
+              specific requirements.
+            </p>
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary>
+            <span>Do you provide placement assistance?</span>
+            <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="m6 9 6 6 6-6"/>
+            </svg>
+          </summary>
+          <div class="faq-body">
+            <p>
+              Career and placement assistance is available for eligible learners, subject to
+              applicable terms and available opportunities. FORTIS SAFETY CENTER does not guarantee
+              employment or salary outcomes.
+            </p>
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary>
+            <span>How can I find out about fees, batch dates and course duration?</span>
+            <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="m6 9 6 6 6-6"/>
+            </svg>
+          </summary>
+          <div class="faq-body">
+            <p>
+              Course fees, duration, batch dates and availability are confirmed directly by the
+              institute. Please contact us by phone, WhatsApp or email for current details.
+            </p>
+          </div>
+        </details>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       CONTACT
+       ======================================================================== -->
+  <section class="section section--surface" id="contact" aria-labelledby="contact-heading">
+    <div class="wrap">
+
+      <div class="sec-head">
+        <span class="eyebrow">Contact Us</span>
+        <h2 id="contact-heading">Start Your Safety Career</h2>
+        <p>
+          Contact FORTIS SAFETY CENTER for course information, admission and corporate
+          training enquiries.
+        </p>
+      </div>
+
+      <div class="contact-grid">
+
+        <!-- Contact details -->
+        <div class="contact-panel reveal">
+          <h3>Visit Our Center</h3>
+
+          <dl class="info-list">
+
+            <div class="info-item">
+              <span class="info-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11Z"/>
+                  <circle cx="12" cy="10" r="2.6"/>
+                </svg>
+              </span>
+              <div>
+                <dt>Address</dt>
+                <dd>
+                  Hotel, Kasia – Gorakhpur Rd,<br>
+                  near Buddha Marg,<br>
+                  Kushinagar, Uttar Pradesh, India
+                </dd>
+              </div>
+            </div>
+
+            <div class="info-item">
+              <span class="info-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.2a2 2 0 0 1 2.1-.5c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2Z"/>
+                </svg>
+              </span>
+              <div>
+                <dt>Phone</dt>
+                <dd><a href="tel:+917800305500">78003 05500</a></dd>
+              </div>
+            </div>
+
+            <div class="info-item">
+              <span class="info-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                  <path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 2a8 8 0 0 1 0 16 8 8 0 0 1-4.1-1.1l-.3-.2-2.9.8.8-2.8-.2-.3A8 8 0 0 1 12 4Zm-3.3 4.3c-.2 0-.5.1-.7.3-.2.3-.8.9-.8 1.9s.7 2 .8 2.1c.1.2 1.4 2.2 3.4 3 1.7.7 2 .5 2.4.5.4 0 1.3-.5 1.5-1.1.2-.5.2-1 .1-1.1l-.6-.3-1.2-.6c-.2-.1-.3-.1-.5.1l-.6.8c-.1.1-.2.2-.4.1-.2-.1-.9-.3-1.7-1a6.3 6.3 0 0 1-1.2-1.4c-.1-.2 0-.4.1-.5l.4-.4.2-.5v-.5l-.6-1.4c-.2-.4-.3-.4-.5-.4h-.1Z"/>
+                </svg>
+              </span>
+              <div>
+                <dt>WhatsApp</dt>
+                <dd><a href="https://wa.me/917800305500" target="_blank" rel="noopener noreferrer">+91 78003 05500</a></dd>
+              </div>
+            </div>
+
+            <div class="info-item">
+              <span class="info-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="2" y="4" width="20" height="16" rx="2"/>
+                  <path d="m2 7 10 6 10-6"/>
+                </svg>
+              </span>
+              <div>
+                <dt>Email</dt>
+                <dd><a href="mailto:safetycenter537@gmail.com">safetycenter537@gmail.com</a></dd>
+              </div>
+            </div>
+
+          </dl>
+
+          <div class="contact-actions">
+            <a class="btn btn-wa" href="https://wa.me/917800305500" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+            <a class="btn btn-dark" href="tel:+917800305500">Call Now</a>
+            <a class="btn btn-outline" href="mailto:safetycenter537@gmail.com">Email Us</a>
+            <a class="btn btn-outline"
+               href="https://www.google.com/maps/search/?api=1&amp;query=FORTIS%20SAFETY%20CENTER%2C%20Kasia%20Gorakhpur%20Road%2C%20near%20Buddha%20Marg%2C%20Kushinagar%2C%20Uttar%20Pradesh"
+               target="_blank" rel="noopener noreferrer">Get Directions</a>
+          </div>
+        </div>
+
+        <!-- Enquiry panel -->
+        <div class="contact-panel reveal d2">
+          <h3>Admission Enquiry</h3>
+          <p style="color:var(--muted);font-size:.92rem;">
+            Share your details below and your message will open directly in WhatsApp,
+            pre-filled and ready to send. Nothing is stored on this website.
+          </p>
+
+          <form class="enquiry-form" id="enquiryForm" novalidate>
+            <div class="field">
+              <label for="enqName">Your Name</label>
+              <input type="text" id="enqName" name="name" autocomplete="name"
+                     placeholder="Enter your full name" required
+                     aria-describedby="enqNameError">
+              <p class="field-error" id="enqNameError" hidden>Please enter your name to continue.</p>
+            </div>
+
+            <div class="field">
+              <label for="enqCourse">Course of Interest</label>
+              <select id="enqCourse" name="course">
+                <option value="General enquiry">General enquiry</option>
+                <option value="NEBOSH IGC">NEBOSH IGC</option>
+                <option value="IOSH">IOSH</option>
+                <option value="OSHA">OSHA</option>
+                <option value="First Aid">First Aid</option>
+                <option value="Fire Safety">Fire Safety</option>
+                <option value="HSE &amp; Industrial Safety">HSE &amp; Industrial Safety</option>
+                <option value="Scaffolding Safety">Scaffolding Safety</option>
+                <option value="Advanced Diploma in Industrial Safety">Advanced Diploma in Industrial Safety</option>
+                <option value="Corporate Safety Training">Corporate Safety Training</option>
+              </select>
+            </div>
+
+            <div class="field">
+              <label for="enqMessage">Message <span class="opt">(optional)</span></label>
+              <textarea id="enqMessage" name="message"
+                        placeholder="Tell us about your background or what you would like to know"></textarea>
+            </div>
+
+            <button class="btn btn-wa btn-block" type="submit">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 2a8 8 0 0 1 0 16 8 8 0 0 1-4.1-1.1l-.3-.2-2.9.8.8-2.8-.2-.3A8 8 0 0 1 12 4Zm-3.3 4.3c-.2 0-.5.1-.7.3-.2.3-.8.9-.8 1.9s.7 2 .8 2.1c.1.2 1.4 2.2 3.4 3 1.7.7 2 .5 2.4.5.4 0 1.3-.5 1.5-1.1.2-.5.2-1 .1-1.1l-.6-.3-1.2-.6c-.2-.1-.3-.1-.5.1l-.6.8c-.1.1-.2.2-.4.1-.2-.1-.9-.3-1.7-1a6.3 6.3 0 0 1-1.2-1.4c-.1-.2 0-.4.1-.5l.4-.4.2-.5v-.5l-.6-1.4c-.2-.4-.3-.4-.5-.4h-.1Z"/>
+              </svg>
+              Send Enquiry via WhatsApp
+            </button>
+
+            <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+
+            <p class="form-note">
+              This form does not use a server. Your details are used only to compose a WhatsApp
+              message to FORTIS SAFETY CENTER. You can also
+              <a href="mailto:safetycenter537@gmail.com">email us</a>
+              or
+              <a href="tel:+917800305500">call 78003 05500</a>.
+            </p>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       FINAL CTA
+       ======================================================================== -->
+  <section class="final-cta" aria-labelledby="final-cta-heading">
+    <div class="wrap final-cta-inner">
+      <h2 id="final-cta-heading">Ready to Start Your Safety Journey?</h2>
+      <p>Join professional safety training at FORTIS SAFETY CENTER.</p>
+      <div class="btn-row">
+        <a class="btn btn-dark" href="https://wa.me/917800305500" target="_blank" rel="noopener noreferrer">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 2a8 8 0 0 1 0 16 8 8 0 0 1-4.1-1.1l-.3-.2-2.9.8.8-2.8-.2-.3A8 8 0 0 1 12 4Zm-3.3 4.3c-.2 0-.5.1-.7.3-.2.3-.8.9-.8 1.9s.7 2 .8 2.1c.1.2 1.4 2.2 3.4 3 1.7.7 2 .5 2.4.5.4 0 1.3-.5 1.5-1.1.2-.5.2-1 .1-1.1l-.6-.3-1.2-.6c-.2-.1-.3-.1-.5.1l-.6.8c-.1.1-.2.2-.4.1-.2-.1-.9-.3-1.7-1a6.3 6.3 0 0 1-1.2-1.4c-.1-.2 0-.4.1-.5l.4-.4.2-.5v-.5l-.6-1.4c-.2-.4-.3-.4-.5-.4h-.1Z"/>
+          </svg>
+          Enquire on WhatsApp
+        </a>
+        <a class="btn btn-outline" href="tel:+917800305500" style="border-color:#231703;color:#231703;">Call 78003 05500</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ==========================================================================
+     FOOTER
+     ========================================================================== -->
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="foot-grid">
+
+      <div>
+        <div class="foot-brand">
+          <svg viewBox="0 0 64 64" role="img" aria-label="FORTIS SAFETY CENTER emblem">
+            <path d="M32 4 56 13v19c0 12.8-9.6 22.6-24 28C17.6 54.6 8 44.8 8 32V13Z" fill="#0a2440"/>
+            <path d="M32 8.5 51.8 16v16c0 10.7-8 19-19.8 23.6C20.2 51 12.2 42.7 12.2 32V16Z"
+                  fill="none" stroke="#d9a72e" stroke-width="1.4" opacity=".85"/>
+            <path d="M22 33.5c0-6.4 4.5-11 10-11s10 4.6 10 11Z" fill="#d9a72e"/>
+            <rect x="17.5" y="33.5" width="29" height="4.4" rx="2.2" fill="#d9a72e"/>
+            <rect x="29.3" y="18.4" width="5.4" height="4.6" rx="2" fill="#d9a72e"/>
+          </svg>
+          <span class="foot-brand-text">
+            <b>FORTIS</b>
+            <span>Safety Center</span>
+          </span>
+        </div>
+        <p class="foot-tag">Resilience | Protection | Leadership</p>
+        <p class="foot-about">
+          Professional safety training and HSE development in Kushinagar, Uttar Pradesh —
+          for individuals, working professionals and organizations.
+        </p>
+      </div>
+
+      <div>
+        <h4 class="foot-title">Quick Links</h4>
+        <ul class="foot-list">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#courses">Courses</a></li>
+          <li><a href="#career">Career Support</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4 class="foot-title">Courses</h4>
+        <ul class="foot-list">
+          <li><a href="#courses">NEBOSH IGC</a></li>
+          <li><a href="#courses">IOSH</a></li>
+          <li><a href="#courses">OSHA</a></li>
+          <li><a href="#courses">First Aid &amp; Fire Safety</a></li>
+          <li><a href="#courses">HSE &amp; Industrial Safety</a></li>
+          <li><a href="#courses">Corporate Safety Training</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4 class="foot-title">Contact</h4>
+        <ul class="foot-list">
+          <li>
+            <a href="tel:+917800305500">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.2a2 2 0 0 1 2.1-.5c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2Z"/>
+              </svg>
+              78003 05500
+            </a>
+          </li>
+          <li>
+            <a href="mailto:safetycenter537@gmail.com">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <rect x="2" y="4" width="20" height="16" rx="2"/>
+                <path d="m2 7 10 6 10-6"/>
+              </svg>
+              safetycenter537@gmail.com
+            </a>
+          </li>
+          <li>
+            <a href="https://wa.me/917800305500" target="_blank" rel="noopener noreferrer">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 2a8 8 0 0 1 0 16 8 8 0 0 1-4.1-1.1l-.3-.2-2.9.8.8-2.8-.2-.3A8 8 0 0 1 12 4Zm-3.3 4.3c-.2 0-.5.1-.7.3-.2.3-.8.9-.8 1.9s.7 2 .8 2.1c.1.2 1.4 2.2 3.4 3 1.7.7 2 .5 2.4.5.4 0 1.3-.5 1.5-1.1.2-.5.2-1 .1-1.1l-.6-.3-1.2-.6c-.2-.1-.3-.1-.5.1l-.6.8c-.1.1-.2.2-.4.1-.2-.1-.9-.3-1.7-1a6.3 6.3 0 0 1-1.2-1.4c-.1-.2 0-.4.1-.5l.4-.4.2-.5v-.5l-.6-1.4c-.2-.4-.3-.4-.5-.4h-.1Z"/>
+              </svg>
+              WhatsApp
+            </a>
+          </li>
+          <li>
+            <span>Kushinagar, Uttar Pradesh, India</span>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+
+    <div class="foot-bottom">
+      <span>&copy; <span id="year">2026</span> FORTIS SAFETY CENTER. All rights reserved.</span>
+      <span>Professional Safety Training &amp; HSE Development</span>
+    </div>
+  </div>
+</footer>
+
+<!-- ==========================================================================
+     FLOATING MOBILE CONTACT
+     ========================================================================== -->
+<div class="floating-contact" aria-label="Quick contact">
+  <a class="fab fab-wa" href="https://wa.me/917800305500" target="_blank" rel="noopener noreferrer"
+     aria-label="Chat with FORTIS SAFETY CENTER on WhatsApp">
+    <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+      <path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 2a8 8 0 0 1 0 16 8 8 0 0 1-4.1-1.1l-.3-.2-2.9.8.8-2.8-.2-.3A8 8 0 0 1 12 4Zm-3.3 4.3c-.2 0-.5.1-.7.3-.2.3-.8.9-.8 1.9s.7 2 .8 2.1c.1.2 1.4 2.2 3.4 3 1.7.7 2 .5 2.4.5.4 0 1.3-.5 1.5-1.1.2-.5.2-1 .1-1.1l-.6-.3-1.2-.6c-.2-.1-.3-.1-.5.1l-.6.8c-.1.1-.2.2-.4.1-.2-.1-.9-.3-1.7-1a6.3 6.3 0 0 1-1.2-1.4c-.1-.2 0-.4.1-.5l.4-.4.2-.5v-.5l-.6-1.4c-.2-.4-.3-.4-.5-.4h-.1Z"/>
+    </svg>
+  </a>
+  <a class="fab fab-call" href="tel:+917800305500"
+     aria-label="Call FORTIS SAFETY CENTER at 78003 05500">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+      <path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.2a2 2 0 0 1 2.1-.5c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2Z"/>
+    </svg>
+  </a>
+</div>
+
+<!-- ==========================================================================
+     STRUCTURED DATA — EducationalOrganization
+     ========================================================================== -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "EducationalOrganization",
+  "name": "FORTIS SAFETY CENTER",
+  "description": "Professional safety training and HSE development institute in Kushinagar, Uttar Pradesh, offering NEBOSH IGC, IOSH, OSHA, First Aid, Fire Safety, HSE & Industrial Safety, Scaffolding Safety, Advanced Diploma in Industrial Safety and corporate safety training.",
+  "telephone": "+91-78003-05500",
+  "email": "safetycenter537@gmail.com",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Hotel, Kasia - Gorakhpur Rd, near Buddha Marg",
+    "addressLocality": "Kushinagar",
+    "addressRegion": "Uttar Pradesh",
+    "addressCountry": "IN"
+  },
+  "founder": {
+    "@type": "Person",
+    "name": "Gufran Siddiqui",
+    "jobTitle": "Founder & Director"
+  },
+  "areaServed": {
+    "@type": "Place",
+    "name": "Kushinagar, Uttar Pradesh, India"
+  }
+}
+</script>
+
+<!-- ==========================================================================
+     STRUCTURED DATA — FAQPage
+     ========================================================================== -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What courses does FORTIS SAFETY CENTER offer?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "FORTIS SAFETY CENTER offers NEBOSH IGC, IOSH, OSHA, First Aid, Fire Safety, HSE & Industrial Safety, Scaffolding Safety, Advanced Diploma in Industrial Safety and Corporate Safety Training."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Where is FORTIS SAFETY CENTER located?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "FORTIS SAFETY CENTER is located at Hotel, Kasia - Gorakhpur Rd, near Buddha Marg, Kushinagar, Uttar Pradesh, India."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I enquire about a course?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "You can contact FORTIS SAFETY CENTER by phone at 78003 05500, on WhatsApp at +91 78003 05500, or by email at safetycenter537@gmail.com."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do you offer training for companies and organizations?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Corporate Safety Training is available and can be customized for organizations, teams, supervisors and industrial workplaces."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do you provide placement assistance?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Career and placement assistance is available for eligible learners, subject to applicable terms and available opportunities. FORTIS SAFETY CENTER does not guarantee employment."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How can I find out about fees, batch dates and course duration?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Course fees, duration, batch dates and availability are confirmed directly by the institute. Please contact FORTIS SAFETY CENTER by phone, WhatsApp or email for current details."
+      }
+    }
+  ]
+}
+</script>
+
+<!-- ==========================================================================
+     INLINE JAVASCRIPT
+     ========================================================================== -->
+<script>
+(function () {
+  'use strict';
+
+  /* ---------------------------------------------------------------
+     Helpers
+     --------------------------------------------------------------- */
+  var $  = function (sel, ctx) { return (ctx || document).querySelector(sel); };
+  var $$ = function (sel, ctx) {
+    return Array.prototype.slice.call((ctx || document).querySelectorAll(sel));
+  };
+
+  var prefersReducedMotion =
+    window.matchMedia &&
+    window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  /* ---------------------------------------------------------------
+     Current year in footer
+     --------------------------------------------------------------- */
+  var yearEl = $('#year');
+  if (yearEl) { yearEl.textContent = String(new Date().getFullYear()); }
+
+  /* ---------------------------------------------------------------
+     Sticky header shadow
+     --------------------------------------------------------------- */
+  var header = $('#siteHeader');
+  if (header) {
+    var onScroll = function () {
+      header.classList.toggle('is-stuck', window.scrollY > 8);
+    };
+    onScroll();
+    window.addEventListener('scroll', onScroll, { passive: true });
+  }
+
+  /* ---------------------------------------------------------------
+     Mobile navigation — toggle, focus trap, Escape, scroll lock
+     --------------------------------------------------------------- */
+  var toggle = $('#navToggle');
+  var panel  = $('#mobileNav');
+
+  if (toggle && panel && header) {
+
+    var getFocusable = function (container) {
+      return $$(
+        'a[href], button:not([disabled]), input:not([disabled]), ' +
+        'select:not([disabled]), textarea:not([disabled]), ' +
+        '[tabindex]:not([tabindex="-1"])',
+        container
+      ).filter(function (el) {
+        return el.offsetParent !== null || el === document.activeElement;
+      });
+    };
+
+    var setMenu = function (open) {
+      toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+      toggle.setAttribute(
+        'aria-label',
+        open ? 'Close navigation menu' : 'Open navigation menu'
+      );
+      panel.classList.toggle('is-open', open);
+      panel.setAttribute('aria-hidden', open ? 'false' : 'true');
+      document.body.classList.toggle('is-locked', open);
+    };
+
+    var openMenu = function () {
+      setMenu(true);
+      var focusable = getFocusable(panel);
+      if (focusable.length) {
+        // Focus the first link without scrolling the page
+        try {
+          focusable[0].focus({ preventScroll: true });
+        } catch (err) {
+          focusable[0].focus();
+        }
+      }
+    };
+
+    var closeMenu = function (restoreFocus) {
+      setMenu(false);
+      if (restoreFocus) {
+        try {
+          toggle.focus({ preventScroll: true });
+        } catch (err) {
+          toggle.focus();
+        }
+      }
+    };
+
+    toggle.addEventListener('click', function () {
+      var isOpen = toggle.getAttribute('aria-expanded') === 'true';
+      if (isOpen) { closeMenu(false); } else { openMenu(); }
+    });
+
+    // Close after choosing a link
+    panel.addEventListener('click', function (event) {
+      var link = event.target.closest ? event.target.closest('a') : null;
+      if (link) { closeMenu(false); }
+    });
+
+    // Escape closes and returns focus to the toggle
+    document.addEventListener('keydown', function (event) {
+      if (event.key === 'Escape' &&
+          toggle.getAttribute('aria-expanded') === 'true') {
+        closeMenu(true);
+      }
+    });
+
+    // Focus trap while the panel is open
+    panel.addEventListener('keydown', function (event) {
+      if (event.key !== 'Tab') { return; }
+      var focusable = getFocusable(panel);
+      if (!focusable.length) { return; }
+
+      var first = focusable[0];
+      var last  = focusable[focusable.length - 1];
+
+      if (event.shiftKey && document.activeElement === first) {
+        event.preventDefault();
+        last.focus();
+      } else if (!event.shiftKey && document.activeElement === last) {
+        event.preventDefault();
+        first.focus();
+      }
+    });
+
+    // Click outside closes the panel
+    document.addEventListener('click', function (event) {
+      if (toggle.getAttribute('aria-expanded') !== 'true') { return; }
+      if (!header.contains(event.target)) { closeMenu(false); }
+    });
+
+    // Reset when resizing up to desktop
+    var resizeTimer;
+    window.addEventListener('resize', function () {
+      clearTimeout(resizeTimer);
+      resizeTimer = setTimeout(function () {
+        if (window.innerWidth > 980 &&
+            toggle.getAttribute('aria-expanded') === 'true') {
+          closeMenu(false);
+        }
+      }, 120);
+    });
+  }
+
+  /* ---------------------------------------------------------------
+     Course filtering
+     --------------------------------------------------------------- */
+  var filterButtons = $$('.filter-btn');
+  var courseCards   = $$('.course-card');
+  var filterStatus  = $('#filterStatus');
+
+  if (filterButtons.length && courseCards.length) {
+    filterButtons.forEach(function (button) {
+      button.addEventListener('click', function () {
+        var filter = button.getAttribute('data-filter');
+
+        filterButtons.forEach(function (b) {
+          b.setAttribute('aria-pressed', b === button ? 'true' : 'false');
+        });
+
+        var visible = 0;
+        courseCards.forEach(function (card) {
+          var match = (filter === 'all') ||
+                      (card.getAttribute('data-cat') === filter);
+          card.classList.toggle('is-hidden', !match);
+          if (match) { visible++; }
+        });
+
+        if (filterStatus) {
+          filterStatus.textContent =
+            visible + ' of ' + courseCards.length + ' programs shown.';
+        }
+      });
+    });
+  }
+
+  /* ---------------------------------------------------------------
+     Reveal on scroll
+     --------------------------------------------------------------- */
+  var revealItems = $$('.reveal');
+
+  if (revealItems.length) {
+    if (!prefersReducedMotion && 'IntersectionObserver' in window) {
+      var revealObserver = new IntersectionObserver(function (entries) {
+        entries.forEach(function (entry) {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('in');
+            revealObserver.unobserve(entry.target);
+          }
+        });
+      }, { rootMargin: '0px 0px -8% 0px', threshold: 0.08 });
+
+      revealItems.forEach(function (el) { revealObserver.observe(el); });
+    } else {
+      revealItems.forEach(function (el) { el.classList.add('in'); });
+    }
+  }
+
+  /* ---------------------------------------------------------------
+     Active navigation state (aria-current + visual)
+     --------------------------------------------------------------- */
+  var navLinks    = $$('.nav-link');
+  var navSections = $$('main section[id]');
+
+  if (navLinks.length && navSections.length && 'IntersectionObserver' in window) {
+    var navObserver = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (!entry.isIntersecting) { return; }
+        var id = entry.target.getAttribute('id');
+        navLinks.forEach(function (link) {
+          var isActive = link.getAttribute('href') === '#' + id;
+          link.classList.toggle('is-active', isActive);
+          if (isActive) {
+            link.setAttribute('aria-current', 'true');
+          } else {
+            link.removeAttribute('aria-current');
+          }
+        });
+      });
+    }, { rootMargin: '-45% 0px -50% 0px', threshold: 0 });
+
+    navSections.forEach(function (section) { navObserver.observe(section); });
+  }
+
+  /* ---------------------------------------------------------------
+     Enquiry form → WhatsApp (client-side only, no backend)
+     --------------------------------------------------------------- */
+  var form = $('#enquiryForm');
+
+  if (form) {
+    var statusEl  = $('#formStatus');
+    var nameEl    = $('#enqName');
+    var nameError = $('#enqNameError');
+    var courseEl  = $('#enqCourse');
+    var messageEl = $('#enqMessage');
+
+    // Clear the name error as the user types
+    if (nameEl && nameError) {
+      nameEl.addEventListener('input', function () {
+        if (nameEl.value.trim()) {
+          nameEl.setAttribute('aria-invalid', 'false');
+          nameError.hidden = true;
+        }
+      });
+    }
+
+    form.addEventListener('submit', function (event) {
+      event.preventDefault();
+
+      var name    = nameEl    ? nameEl.value.trim()   : '';
+      var course  = courseEl  ? courseEl.value        : 'General enquiry';
+      var message = messageEl ? messageEl.value.trim(): '';
+
+      // Validate
+      if (!name) {
+        if (statusEl)  { statusEl.textContent = ''; }
+        if (nameError) { nameError.hidden = false; }
+        if (nameEl) {
+          nameEl.setAttribute('aria-invalid', 'true');
+          nameEl.focus();
+        }
+        return;
+      }
+
+      if (nameError) { nameError.hidden = true; }
+      if (nameEl) { nameEl.setAttribute('aria-invalid', 'false'); }
+
+      var text =
+        'Hello FORTIS SAFETY CENTER,\n\n' +
+        'Name: ' + name + '\n' +
+        'Course of interest: ' + course +
+        (message ? '\nMessage: ' + message : '') +
+        '\n\nPlease share the course details, availability and fees.';
+
+      var url = 'https://wa.me/917800305500?text=' + encodeURIComponent(text);
+
+      if (statusEl) {
+        statusEl.textContent = 'Opening WhatsApp with your message…';
+      }
+
+      var opened = window.open(url, '_blank', 'noopener,noreferrer');
+
+      if (!opened) {
+        // Popup blocked — navigate in the same tab
+        window.location.href = url;
+      }
+    });
+  }
+
+})();
+</script>
+
+</body>
+</html>
