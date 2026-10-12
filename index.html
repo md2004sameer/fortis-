@@ -282,14 +282,14 @@ section[id]{ scroll-margin-top:calc(var(--header-h) + 20px); }
 
 .btn-dark{
   background:var(--navy-800);
-  color:#fff;
+  color:#edf5ff;
   border-color:var(--navy-800);
 }
 .btn-dark:hover{ background:var(--navy-700); border-color:var(--navy-700); }
 
 .btn-wa{
   background:var(--wa);
-  color:#fff;
+  color:#f3fff7;
   border-color:var(--wa);
 }
 .btn-wa:hover{ background:var(--wa-dark); border-color:var(--wa-dark); }
@@ -302,11 +302,11 @@ section[id]{ scroll-margin-top:calc(var(--header-h) + 20px); }
 .btn-outline:hover{ border-color:var(--navy-800); background:rgba(10,36,64,.045); }
 
 .btn-outline-light{
-  background:rgba(255,255,255,.05);
+  background:rgba(4,18,30,.62);
   color:#fff;
-  border-color:rgba(255,255,255,.4);
+  border-color:rgba(255,255,255,.45);
 }
-.btn-outline-light:hover{ background:rgba(255,255,255,.13); border-color:rgba(255,255,255,.72); }
+.btn-outline-light:hover{ background:rgba(9,28,47,.78); border-color:rgba(255,255,255,.75); }
 
 .btn-block{ width:100%; }
 .btn-row{ display:flex; flex-wrap:wrap; gap:.75rem; }
@@ -543,10 +543,10 @@ section[id]{ scroll-margin-top:calc(var(--header-h) + 20px); }
   display:inline-flex; align-items:center; gap:.45rem;
   padding:.42rem .8rem;
   border:1px solid rgba(255,255,255,.17);
-  background:rgba(255,255,255,.05);
+  background:rgba(4,17,29,.52);
   border-radius:var(--r-pill);
   font-size:.74rem; font-weight:700; letter-spacing:.07em;
-  text-transform:uppercase; color:#cfdded;
+  text-transform:uppercase; color:#fff;
 }
 .hero-point svg{ width:14px; height:14px; color:var(--gold-light); flex:none; }
 
@@ -723,8 +723,10 @@ section[id]{ scroll-margin-top:calc(var(--header-h) + 20px); }
    -------------------------------------------------------------------------- */
 .filters{
   display:flex; flex-wrap:wrap; gap:.5rem; justify-content:center;
-  margin-bottom:clamp(24px,3.4vw,38px);
+  margin:0 0 clamp(24px,3.4vw,38px);
+  padding:0; border:0; min-inline-size:0;
 }
+.filters legend{ position:absolute; width:1px; height:1px; margin:-1px; overflow:hidden; clip:rect(0,0,0,0); }
 .filter-btn{
   padding:.55rem 1.05rem;
   border-radius:var(--r-pill);
@@ -1848,15 +1850,16 @@ section[id]{ scroll-margin-top:calc(var(--header-h) + 20px); }
         </p>
       </div>
 
-      <div class="filters" role="group" aria-label="Filter courses by category">
+      <fieldset class="filters" aria-label="Filter courses by category">
+        <legend>Filter courses by category</legend>
         <button class="filter-btn" type="button" data-filter="all" aria-pressed="true">All Programs</button>
         <button class="filter-btn" type="button" data-filter="global" aria-pressed="false">Global Programs</button>
         <button class="filter-btn" type="button" data-filter="emergency" aria-pressed="false">Emergency Response</button>
         <button class="filter-btn" type="button" data-filter="industrial" aria-pressed="false">Industrial Safety</button>
         <button class="filter-btn" type="button" data-filter="corporate" aria-pressed="false">Corporate</button>
-      </div>
+      </fieldset>
 
-      <p class="sr-only" id="filterStatus" role="status" aria-live="polite"></p>
+      <output class="sr-only" id="filterStatus" aria-live="polite"></output>
 
       <div class="course-grid" id="courseGrid">
 
@@ -1990,72 +1993,11 @@ section[id]{ scroll-margin-top:calc(var(--header-h) + 20px); }
           </div>
         </article>
 
-        <!-- 7 -->
-        <article class="course-card reveal" data-cat="industrial">
-          <div class="course-top">
-            <span class="course-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M4 3v18M20 3v18M4 8h16M4 16h16M4 3l16 18M20 3 4 21"/>
-              </svg>
-            </span>
-            <span class="course-tag">Industrial Safety</span>
-          </div>
-          <h3>Scaffolding Safety</h3>
-          <p>Safety awareness for scaffold users, supervisors and workplace teams.</p>
-          <div class="course-foot">
-            <span class="course-note">Contact us for course details</span>
-            <a class="course-link" href="#contact">
-              Enquire
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-            </a>
-          </div>
-        </article>
+      
 
-        <!-- 8 -->
-        <article class="course-card reveal d1" data-cat="industrial">
-          <div class="course-top">
-            <span class="course-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M2.5 9 12 4.5 21.5 9 12 13.5Z"/>
-                <path d="M6 11.2V16c0 1.7 2.7 3 6 3s6-1.3 6-3v-4.8"/>
-                <path d="M21.5 9v5"/>
-              </svg>
-            </span>
-            <span class="course-tag">Industrial Safety</span>
-          </div>
-          <h3>Advanced Diploma in Industrial Safety</h3>
-          <p>Professional industrial-safety development program. Affiliation and approval details are subject to applicable authorization.</p>
-          <div class="course-foot">
-            <span class="course-note">Enquire for availability and fees</span>
-            <a class="course-link" href="#contact">
-              Enquire
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-            </a>
-          </div>
-        </article>
+        
 
-        <!-- 9 -->
-        <article class="course-card reveal d2" data-cat="corporate">
-          <div class="course-top">
-            <span class="course-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-                <rect x="4" y="3" width="16" height="18" rx="1.6"/>
-                <path d="M9 7.5h2M13 7.5h2M9 11.5h2M13 11.5h2"/>
-                <path d="M9.5 21v-5h5v5"/>
-              </svg>
-            </span>
-            <span class="course-tag">Corporate</span>
-          </div>
-          <h3>Corporate Safety Training</h3>
-          <p>Customized HSE programs for organizations, teams, supervisors and industrial workplaces.</p>
-          <div class="course-foot">
-            <span class="course-note">Customized to your organization</span>
-            <a class="course-link" href="#contact">
-              Enquire
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-            </a>
-          </div>
-        </article>
+       
 
       </div>
 
@@ -2445,6 +2387,8 @@ section[id]{ scroll-margin-top:calc(var(--header-h) + 20px); }
               <div>
                 <dt>Phone</dt>
                 <dd><a href="tel:+917800305500">78003 05500</a></dd>
+                <dd><a href="tel:+917800305500">91209 97838</a></dd>
+                
               </div>
             </div>
 
@@ -2531,7 +2475,7 @@ section[id]{ scroll-margin-top:calc(var(--header-h) + 20px); }
               Send Enquiry via WhatsApp
             </button>
 
-            <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+            <output class="form-status" id="formStatus" aria-live="polite"></output>
 
             <p class="form-note">
               This form does not use a server. Your details are used only to compose a WhatsApp
@@ -2629,6 +2573,14 @@ section[id]{ scroll-margin-top:calc(var(--header-h) + 20px); }
                 <path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.2a2 2 0 0 1 2.1-.5c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2Z"/>
               </svg>
               78003 05500
+            </a>
+          </li>
+          <li>
+            <a href="tel:+919120997838">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.2a2 2 0 0 1 2.1-.5c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2Z"/>
+              </svg>
+              91209 97838
             </a>
           </li>
           <li>
@@ -2778,10 +2730,10 @@ section[id]{ scroll-margin-top:calc(var(--header-h) + 20px); }
 (function () {
   'use strict';
 
-  /* ---------------------------------------------------------------
-     Helpers
-     --------------------------------------------------------------- */
-  var $  = function (sel, ctx) { return (ctx || document).querySelector(sel); };
+  var $ = function (sel, ctx) {
+    return (ctx || document).querySelector(sel);
+  };
+
   var $$ = function (sel, ctx) {
     return Array.prototype.slice.call((ctx || document).querySelectorAll(sel));
   };
@@ -2790,42 +2742,42 @@ section[id]{ scroll-margin-top:calc(var(--header-h) + 20px); }
     window.matchMedia &&
     window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
-  /* ---------------------------------------------------------------
-     Current year in footer
-     --------------------------------------------------------------- */
-  var yearEl = $('#year');
-  if (yearEl) { yearEl.textContent = String(new Date().getFullYear()); }
+  function setCurrentYear() {
+    var yearEl = $('#year');
+    if (yearEl) {
+      yearEl.textContent = String(new Date().getFullYear());
+    }
+  }
 
-  /* ---------------------------------------------------------------
-     Sticky header shadow
-     --------------------------------------------------------------- */
-  var header = $('#siteHeader');
-  if (header) {
+  function setStickyHeader() {
+    var header = $('#siteHeader');
+    if (!header) { return; }
+
     var onScroll = function () {
       header.classList.toggle('is-stuck', window.scrollY > 8);
     };
+
     onScroll();
     window.addEventListener('scroll', onScroll, { passive: true });
   }
 
-  /* ---------------------------------------------------------------
-     Mobile navigation — toggle, focus trap, Escape, scroll lock
-     --------------------------------------------------------------- */
-  var toggle = $('#navToggle');
-  var panel  = $('#mobileNav');
+  function getFocusable(container) {
+    return $$(
+      'a[href], button:not([disabled]), input:not([disabled]), ' +
+      'select:not([disabled]), textarea:not([disabled]), ' +
+      '[tabindex]:not([tabindex="-1"])',
+      container
+    ).filter(function (el) {
+      return el.offsetParent !== null || el === document.activeElement;
+    });
+  }
 
-  if (toggle && panel && header) {
+  function setupMobileNav() {
+    var toggle = $('#navToggle');
+    var panel = $('#mobileNav');
+    var header = $('#siteHeader');
 
-    var getFocusable = function (container) {
-      return $$(
-        'a[href], button:not([disabled]), input:not([disabled]), ' +
-        'select:not([disabled]), textarea:not([disabled]), ' +
-        '[tabindex]:not([tabindex="-1"])',
-        container
-      ).filter(function (el) {
-        return el.offsetParent !== null || el === document.activeElement;
-      });
-    };
+    if (!(toggle && panel && header)) { return; }
 
     var setMenu = function (open) {
       toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
@@ -2841,39 +2793,42 @@ section[id]{ scroll-margin-top:calc(var(--header-h) + 20px); }
     var openMenu = function () {
       setMenu(true);
       var focusable = getFocusable(panel);
-      if (focusable.length) {
-        // Focus the first link without scrolling the page
-        try {
-          focusable[0].focus({ preventScroll: true });
-        } catch (err) {
-          focusable[0].focus();
-        }
+      if (!focusable.length) { return; }
+
+      try {
+        focusable[0].focus({ preventScroll: true });
+      } catch (err) {
+        focusable[0].focus();
       }
     };
 
     var closeMenu = function (restoreFocus) {
       setMenu(false);
-      if (restoreFocus) {
-        try {
-          toggle.focus({ preventScroll: true });
-        } catch (err) {
-          toggle.focus();
-        }
+      if (!restoreFocus) { return; }
+
+      try {
+        toggle.focus({ preventScroll: true });
+      } catch (err) {
+        toggle.focus();
       }
     };
 
     toggle.addEventListener('click', function () {
       var isOpen = toggle.getAttribute('aria-expanded') === 'true';
-      if (isOpen) { closeMenu(false); } else { openMenu(); }
+      if (isOpen) {
+        closeMenu(false);
+      } else {
+        openMenu();
+      }
     });
 
-    // Close after choosing a link
     panel.addEventListener('click', function (event) {
       var link = event.target.closest ? event.target.closest('a') : null;
-      if (link) { closeMenu(false); }
+      if (link) {
+        closeMenu(false);
+      }
     });
 
-    // Escape closes and returns focus to the toggle
     document.addEventListener('keydown', function (event) {
       if (event.key === 'Escape' &&
           toggle.getAttribute('aria-expanded') === 'true') {
@@ -2881,14 +2836,14 @@ section[id]{ scroll-margin-top:calc(var(--header-h) + 20px); }
       }
     });
 
-    // Focus trap while the panel is open
     panel.addEventListener('keydown', function (event) {
       if (event.key !== 'Tab') { return; }
+
       var focusable = getFocusable(panel);
       if (!focusable.length) { return; }
 
       var first = focusable[0];
-      var last  = focusable[focusable.length - 1];
+      var last = focusable[focusable.length - 1];
 
       if (event.shiftKey && document.activeElement === first) {
         event.preventDefault();
@@ -2899,13 +2854,13 @@ section[id]{ scroll-margin-top:calc(var(--header-h) + 20px); }
       }
     });
 
-    // Click outside closes the panel
     document.addEventListener('click', function (event) {
       if (toggle.getAttribute('aria-expanded') !== 'true') { return; }
-      if (!header.contains(event.target)) { closeMenu(false); }
+      if (!header.contains(event.target)) {
+        closeMenu(false);
+      }
     });
 
-    // Reset when resizing up to desktop
     var resizeTimer;
     window.addEventListener('resize', function () {
       clearTimeout(resizeTimer);
@@ -2918,44 +2873,39 @@ section[id]{ scroll-margin-top:calc(var(--header-h) + 20px); }
     });
   }
 
-  /* ---------------------------------------------------------------
-     Course filtering
-     --------------------------------------------------------------- */
-  var filterButtons = $$('.filter-btn');
-  var courseCards   = $$('.course-card');
-  var filterStatus  = $('#filterStatus');
+  function setupCourseFilters() {
+    var filterButtons = $$('.filter-btn');
+    var courseCards = $$('.course-card');
+    var filterStatus = $('#filterStatus');
 
-  if (filterButtons.length && courseCards.length) {
+    if (!(filterButtons.length && courseCards.length)) { return; }
+
     filterButtons.forEach(function (button) {
       button.addEventListener('click', function () {
-        var filter = button.getAttribute('data-filter');
+        var filter = button.dataset.filter;
 
-        filterButtons.forEach(function (b) {
-          b.setAttribute('aria-pressed', b === button ? 'true' : 'false');
+        filterButtons.forEach(function (item) {
+          item.setAttribute('aria-pressed', item === button ? 'true' : 'false');
         });
 
         var visible = 0;
         courseCards.forEach(function (card) {
-          var match = (filter === 'all') ||
-                      (card.getAttribute('data-cat') === filter);
-          card.classList.toggle('is-hidden', !match);
-          if (match) { visible++; }
+          var isMatch = filter === 'all' || card.dataset.cat === filter;
+          card.classList.toggle('is-hidden', !isMatch);
+          if (isMatch) { visible += 1; }
         });
 
         if (filterStatus) {
-          filterStatus.textContent =
-            visible + ' of ' + courseCards.length + ' programs shown.';
+          filterStatus.textContent = visible + ' of ' + courseCards.length + ' programs shown.';
         }
       });
     });
   }
 
-  /* ---------------------------------------------------------------
-     Reveal on scroll
-     --------------------------------------------------------------- */
-  var revealItems = $$('.reveal');
+  function setupRevealEffects() {
+    var revealItems = $$('.reveal');
+    if (!revealItems.length) { return; }
 
-  if (revealItems.length) {
     if (!prefersReducedMotion && 'IntersectionObserver' in window) {
       var revealObserver = new IntersectionObserver(function (entries) {
         entries.forEach(function (entry) {
@@ -2966,22 +2916,29 @@ section[id]{ scroll-margin-top:calc(var(--header-h) + 20px); }
         });
       }, { rootMargin: '0px 0px -8% 0px', threshold: 0.08 });
 
-      revealItems.forEach(function (el) { revealObserver.observe(el); });
-    } else {
-      revealItems.forEach(function (el) { el.classList.add('in'); });
+      revealItems.forEach(function (item) {
+        revealObserver.observe(item);
+      });
+      return;
     }
+
+    revealItems.forEach(function (item) {
+      item.classList.add('in');
+    });
   }
 
-  /* ---------------------------------------------------------------
-     Active navigation state (aria-current + visual)
-     --------------------------------------------------------------- */
-  var navLinks    = $$('.nav-link');
-  var navSections = $$('main section[id]');
+  function setupNavTracking() {
+    var navLinks = $$('.nav-link');
+    var navSections = $$('main section[id]');
 
-  if (navLinks.length && navSections.length && 'IntersectionObserver' in window) {
+    if (!(navLinks.length && navSections.length && 'IntersectionObserver' in window)) {
+      return;
+    }
+
     var navObserver = new IntersectionObserver(function (entries) {
       entries.forEach(function (entry) {
         if (!entry.isIntersecting) { return; }
+
         var id = entry.target.getAttribute('id');
         navLinks.forEach(function (link) {
           var isActive = link.getAttribute('href') === '#' + id;
@@ -2995,22 +2952,21 @@ section[id]{ scroll-margin-top:calc(var(--header-h) + 20px); }
       });
     }, { rootMargin: '-45% 0px -50% 0px', threshold: 0 });
 
-    navSections.forEach(function (section) { navObserver.observe(section); });
+    navSections.forEach(function (section) {
+      navObserver.observe(section);
+    });
   }
 
-  /* ---------------------------------------------------------------
-     Enquiry form → WhatsApp (client-side only, no backend)
-     --------------------------------------------------------------- */
-  var form = $('#enquiryForm');
+  function setupEnquiryForm() {
+    var form = $('#enquiryForm');
+    if (!form) { return; }
 
-  if (form) {
-    var statusEl  = $('#formStatus');
-    var nameEl    = $('#enqName');
+    var statusEl = $('#formStatus');
+    var nameEl = $('#enqName');
     var nameError = $('#enqNameError');
-    var courseEl  = $('#enqCourse');
+    var courseEl = $('#enqCourse');
     var messageEl = $('#enqMessage');
 
-    // Clear the name error as the user types
     if (nameEl && nameError) {
       nameEl.addEventListener('input', function () {
         if (nameEl.value.trim()) {
@@ -3023,13 +2979,12 @@ section[id]{ scroll-margin-top:calc(var(--header-h) + 20px); }
     form.addEventListener('submit', function (event) {
       event.preventDefault();
 
-      var name    = nameEl    ? nameEl.value.trim()   : '';
-      var course  = courseEl  ? courseEl.value        : 'General enquiry';
-      var message = messageEl ? messageEl.value.trim(): '';
+      var name = nameEl ? nameEl.value.trim() : '';
+      var course = courseEl ? courseEl.value : 'General enquiry';
+      var message = messageEl ? messageEl.value.trim() : '';
 
-      // Validate
       if (!name) {
-        if (statusEl)  { statusEl.textContent = ''; }
+        if (statusEl) { statusEl.textContent = ''; }
         if (nameError) { nameError.hidden = false; }
         if (nameEl) {
           nameEl.setAttribute('aria-invalid', 'true');
@@ -3041,8 +2996,7 @@ section[id]{ scroll-margin-top:calc(var(--header-h) + 20px); }
       if (nameError) { nameError.hidden = true; }
       if (nameEl) { nameEl.setAttribute('aria-invalid', 'false'); }
 
-      var text =
-        'Hello FORTIS SAFETY CENTER,\n\n' +
+      var text = 'Hello FORTIS SAFETY CENTER,\n\n' +
         'Name: ' + name + '\n' +
         'Course of interest: ' + course +
         (message ? '\nMessage: ' + message : '') +
@@ -3055,14 +3009,23 @@ section[id]{ scroll-margin-top:calc(var(--header-h) + 20px); }
       }
 
       var opened = window.open(url, '_blank', 'noopener,noreferrer');
-
       if (!opened) {
-        // Popup blocked — navigate in the same tab
         window.location.href = url;
       }
     });
   }
 
+  function init() {
+    setCurrentYear();
+    setStickyHeader();
+    setupMobileNav();
+    setupCourseFilters();
+    setupRevealEffects();
+    setupNavTracking();
+    setupEnquiryForm();
+  }
+
+  init();
 })();
 </script>
 
